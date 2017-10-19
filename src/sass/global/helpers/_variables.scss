@@ -1,0 +1,133 @@
+// ======================================
+//  VARIBLES
+// ======================================
+
+// 1.FONTS
+// 2.COLORS
+// 3.BUTTONS
+// 4.FORMS
+// 5.MEDIA
+
+
+
+// ======================================
+//  1.FONTS
+// ======================================
+
+$ff: "Roboto", Arial, sans-serif;
+$ff-secondary: "Ubuntu";
+
+$ff-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+$ff-serif:       Georgia, "Times New Roman", Times, serif;
+
+$fz-base: 18px;
+$lh-base: 1.2;
+$fw-base: 400;
+
+// title
+$ff-title: $ff-secondary;
+//font-size title
+$fz-h1: 60px;
+$fz-h2: 36px;
+$fz-h3: 24px;
+$fz-h4: 20px;
+//light height
+$title-lh: 1.2;
+$title-fw: 700;
+
+
+//======================================
+//  2.COLORS
+//======================================
+
+$primary-color: #171717;
+$secondary-color: #20bdff;
+
+$white: #fff;
+$black: #000;
+$grey: #848484;
+$text-color: #fff;
+
+
+$body-bg: $primary-color;
+$link-color: $text-color;
+$link-colorh: $text-color;
+// title color
+$title-color: #fff;
+$tc-h1: $title-color;
+$tc-h2: $title-color;
+$tc-h3: $title-color;
+$tc-h4: $title-color;
+
+$error: #ed3237;
+$success: green;
+
+//======================================
+//  3.BUTTONS
+//======================================
+// default
+$btn-width: 256px;
+$btn-height: 60px;
+$btn-fz: 18px;
+$btn-lh: 1.2px;
+$btn-fw: 700;
+$btn-radius: 0px;
+$btn-border-w: 2px;
+$btn-border-c: $grey;
+$min-width: 100px;
+$btn-bg: $primary-color;
+$btn-color: $secondary-color;
+
+// //======================================
+// //  3.FORMS
+// //======================================
+
+// // group
+// $group-margin-bottom: 10px;
+// input
+// $input-width: 100%;
+// $input-height: 30px;
+// $input-padding: 0 10px 0 10px;
+// $input-ff:$ff;
+// $input-fz: $fz-base;
+// $input-lh: 1.5;
+// $input-fw: 400;
+// $input-tc: #a1a1a1;
+// $input-border: 1px solid #a7a7a7;
+// $input-border-radius: 0;
+
+// $input-place-color: $input-tc;
+// $input-transition: all .3s ;
+// $input-bg: #f8f8f8;
+
+// // textarea
+// $textarea-width: 100%;
+// $textarea-height: 90px;
+// $textarea-padding: 10px 14px;
+// $textarea-border-radius: 0;
+
+
+//======================================
+//  5.MEDIA
+//======================================
+//MIXIN
+// @mixin mq($width, $type: min) {
+//   @if map_has_key($breakpoints, $width) {
+//    $width: map_get($breakpoints, $width);
+//    @if $type == max {
+//     $width: $width - 1px;
+//    }
+//    @media only screen and (#{$type}-width: $width) {
+//     @content;
+//    }
+//   }
+// }
+//breakpoints
+// $breakpoints: (
+//   "phone":   481px,
+//   "tablet-small": 601px,
+//   "tablet": 768px,
+//   "laptop": 980px,
+//   "desktop": 1280px,
+//   "desktop-lg": 1620px,
+// );

@@ -1,0 +1,36 @@
+//fonts
+@import "global/fonts";
+
+//normalize v7.0
+@import "global/helpers/helpers_all";
+@import "global/normalize";
+//grid
+@import "global/grid/bootstrap-grid.scss";
+@import "global/grid/grid/_variables.scss";
+@import "global/global.scss";
+
+
+//typography
+@import "global/typography.scss";
+//buttons
+@import "global/buttons.scss";
+
+//sprite
+@import "sprite/sprite.scss";
+
+//header
+@import "global/header.scss";
+//footer
+@import "global/footer.scss";
+
+
+//home
+@import "index/home.scss";
+
+
+
+//ui
+@import "ui/ui.scss";
+
+//navigation pages
+@import "global/helpers/_pages.scss";

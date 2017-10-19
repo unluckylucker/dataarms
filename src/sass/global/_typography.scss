@@ -1,0 +1,85 @@
+/* ==========================================================================
+   TYPOGRAPHY
+   ===========================================================================*/
+/* TITLES */
+
+h1{
+	font-family: $ff-title;
+	@include font-size($fz-h1);
+	color: $title-color;
+	font-weight: $title-fw;
+}
+
+h2{
+	font-family: $ff-title;
+	@include font-size($fz-h2);
+	color: $title-color;
+	line-height:$title-lh;
+	font-weight: $title-fw;
+}
+
+h3{
+	font-family: $ff-title;
+	@include font-size($fz-h3);
+	color: $title-color;
+	font-weight: $title-fw;
+}
+
+h4{
+	font-family: $ff-title;
+	@include font-size($fz-h4);
+	color: $title-color;
+	font-weight: $title-fw;
+}
+/* TEXT */
+b{
+	font-weight: 700;
+}
+.italic{
+	font-style: italic;
+}
+.text_center{
+	text-align: center !important;
+}
+.text_left{
+	text-align: left !important;
+}
+.text_right{
+	text-align: right !important;
+}
+.bold{
+	font-weight: 700;
+}
+.text_uppercase{
+	text-transform: uppercase;
+}
+.no-upercouse{
+	text-transform: none;
+}
+
+/* LINKS */
+a {
+	font-family: $ff-secondary;
+	@include font-size($fz-base);
+	color: $link-color;
+	line-height: $lh-base;
+	font-weight: 700;
+	text-decoration: none;
+	&:hover{
+		color: $link-color;
+		text-decoration: underline;
+	}
+}
+
+/* list */
+ul{
+	margin-left: 20px;
+	li{
+		color: #000;
+		font-weight: 400;
+		font-family: $ff-secondary;
+		list-style-type: disc;
+		padding-left: 5px;
+		margin-bottom: 30px;
+	}
+}
