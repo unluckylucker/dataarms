@@ -123,5 +123,41 @@
 /* bottom header */
 .header-bottom{
 	position: relative;
+	z-index: 1;
+}
+
+.header-bottom-content{
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0 50px;
+	@media screen and (max-width: 1240px) {
+		padding: 0 20px;
+	}
+	@media screen and (max-width: 979px) {
+		padding: 0 10px;
+	}
+}
+
+/* logo */
+.logo{
+	width: 232px;
+	height: 63px;
+	margin-top: 14px;
+}
+
+/* header menu */
+.header-bottom-content-menu__item{
+	list-style-type: none;
+	text-transform: uppercase;
+	float: left;
+	padding: 5px 25px;
+	@media screen and (max-width: 1240px) {
+		padding: 5px 15px;
+	}
+}
+
+.header-bottom-content__search, .header-bottom-content-menu {
+	float: right;
+	margin-top: 10px;
 }
 /* end header */

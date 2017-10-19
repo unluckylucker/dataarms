@@ -8,6 +8,9 @@ h1{
 	@include font-size($fz-h1);
 	color: $title-color;
 	font-weight: $title-fw;
+	span{
+		@include font-size(51px);
+	}
 }
 
 h2{
