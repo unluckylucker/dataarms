@@ -33,12 +33,23 @@
 			</a>
 		</div>	
 	</div>
+	<!-- header bottom -->
 	<div class="header-bottom">
 		<div class="header-bottom-content">
+			<!-- header logo -->
 			<img src="images/logo.svg" class="logo" alt="logo">
-			<div class="header-bottom-content__search">
-				<input type="search">
-			</div>
+			<span class="menu-icon"></span>
+			<!-- header search-->
+			<form class="header-bottom-content-search">
+				<input type="search" placeholder="Поиск по сайту..." class="header-bottom-content-search__input">
+				<!--search btn-->
+				<button class="btn-svg header-bottom-content-search__btn" type="button">
+					<svg class="icon icon-search">
+						<use xlink:href="images/sprite/sprite.svg#search"></use>
+					</svg> 
+				</button>
+			</form>
+			<!-- header menu-->
 			<div class="header-bottom-content-menu">
 				<ul>
 					<li class="header-bottom-content-menu__item"><a href="#">О нас</a></li>
@@ -48,8 +59,9 @@
 					<li class="header-bottom-content-menu__item"><a href="#">Контакты</a></li>
 				</ul>
 			</div>
+			<!-- header main-->
 			<div class="header-bottom-content-main">
-				<h1>Безопастность вашего бизнеса в<br><span>ваших руках</span></h1>
+				<h1>Безопастность вашего бизнеса <br><span>в ваших руках</span></h1>
 			</div>
 		</div>	
 	</div>
