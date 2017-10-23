@@ -61,9 +61,15 @@ ul {
 	margin-bottom: 0;
 	margin-top: 0;
 	list-style: none;
+	margin-left: 10px;
 	li {
 		list-style: none;
-		list-style-type:none;
+		list-style-type: disc;
+		color: #000;
+		font-weight: 400;
+		font-family: $ff-secondary;
+		padding-left: 5px;
+		margin-bottom: 30px;
 	}
 }
 input,

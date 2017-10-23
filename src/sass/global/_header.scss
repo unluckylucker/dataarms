@@ -36,7 +36,7 @@
 			background-size: auto, 128px 388px;
 		}
 		@media screen and (max-width: 767px) {
-			background: none;
+			display: none;
 		}
 	}
 }
@@ -169,49 +169,121 @@
 	float: right;
 	margin-top: 10px;
 }
+/* close menu */
+.header-bottom-content-menu__close{
+	cursor: pointer;
+	position: absolute;
+	right: 30px;
+	top: 5px;
+	@media screen and (min-width: 891px) {
+		display: none;
+	}
+}
+
+.close-icon {
+	color: #fff;
+	position: absolute;
+	margin-top: 0;
+	margin-left: 0;
+	width: 25px;
+	height: 25px;
+}
+.close-icon:before {
+	content: '';
+	position: absolute;
+	top: 10px;
+	width: 25px;
+	height: 1px;
+	background-color: currentColor;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.close-icon:after {
+	content: '';
+	position: absolute;
+	top: 10px;
+	width: 25px;
+	height: 1px;
+	background-color: currentColor;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
 
 .header-bottom-content-menu {
 	position: absolute;
 	right: 90px;
 	top: 0px;
 	border-right: 2px solid #fff;
+	z-index: 2;
 	@media screen and (max-width: 1240px) {
 		right: 55px;
 	}
 	@media screen and (max-width: 890px) {
 		display: none;
+		background: $primary-color;
+		top: 0;
+		left: 0;
+		margin-top: 0;
+		width: 230px;
+		border-right: none;
+		height: 100%;
+		position: fixed;
+		margin-top: 49px;
+		.header-bottom-content-menu__item{
+			float: none;
+			padding: 15px 0;
+			a{
+				@include font-size(14px);
+			}
+		}
+	}
+	@media screen and (min-width: 891px) {
+		display: block !important;
 	}
 	.header-bottom-content-menu__item{
 		margin-bottom: 0px;
 	}
 }
+/* header menu hamburger */
+.header-bottom-content__menu-btn{
+	cursor: pointer;
+	display: inline-block;
+	margin-left: 15px;
+	margin-top: 23px;
+	width: 22px;
+	height: 22px;
+	vertical-align: top;
+	@media screen and (min-width: 891px) {
+		display: none;
+	}
+}
 
 .menu-icon {
-  color: #fff;
-  position: absolute;
-  margin-left: 2px;
-  margin-top: 10px;
-  width: 17px;
-  height: 1px;
-  background-color: currentColor;
+	color: #fff;
+	position: absolute;
+	margin-left: 2px;
+	width: 21px;
+	height: 3px;		
+	margin-top: 8px;
+	background-color: currentColor;	
 }
 .menu-icon:before {
-  content: '';
-  position: absolute;
-  top: -5px;
-  left: 0;
-  width: 17px;
-  height: 1px;
-  background-color: currentColor;
+	content: '';
+	position: absolute;
+	top: -6px;
+	left: 0;
+	width: 21px;
+	height: 3px;
+	background-color: currentColor;
 }
 .menu-icon:after {
-  content: '';
-  position: absolute;
-  top: 5px;
-  left: 0;
-  width: 17px;
-  height: 1px;
-  background-color: currentColor;
+	content: '';
+	position: absolute;
+	top: 6px;
+	left: 0;
+	width: 21px;
+	height: 3px;
+	background-color: currentColor;
 }
 
 /* header search */
@@ -263,4 +335,91 @@
 	stroke: #fff;
 	fill: #fff;
 }
+
+/* header-title */
+.header-title{
+	margin-top: 208px;
+	float: left;
+	@media screen and (max-width: 1240px) {
+		@include font-size(48px);
+		margin-top: 109px;
+		span{
+			@include font-size(36px);
+		}
+	}
+	@media screen and (max-width: 979px) {
+		@include font-size(40px);
+		span{
+			@include font-size(30px);
+		}
+	}
+	@media screen and (max-width: 540px) {
+		@include font-size(30px);
+		margin-top: 60px;
+		span{
+			@include font-size(24px);
+		}
+	}
+}
+/* header-form */
+.header-form{
+	float: right;
+	width: 510px;
+	text-align: center;
+	padding: 0 44px 44px 44px;
+	@media screen and (max-width: 1240px) {
+		width: 50%;
+	}
+	background: rgba(0,0,0,0.4);
+	button{
+		margin-top: 44px;
+	}
+}
+
+.form-title{
+	color: #20bdff;
+	margin: 0;
+	background: #000;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: $ff-secondary;
+	padding: 35px 0;
+	margin: 0 -44px 0 -44px;
+}
+
+.form-title__item{
+	margin-top: 20px;
+	position: relative;
+	input, textarea{
+		width: 100%;
+		background: #000;
+		border: 2px solid $grey;
+		color: #fff;
+		font-style: italic;
+		padding: 18px;
+		padding-left: 40px;
+	}
+	textarea{
+		height: 145px;
+	}
+}
+
+.icon-form{
+	position: absolute;
+	top: 23px;
+	left: 15px;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-form.icon-call{
+	width: 16px;
+	height: 16px;
+}
+
+.icon-form.icon-mail{
+	width: 16px;
+	height: 16px;
+}
+
 /* end header */

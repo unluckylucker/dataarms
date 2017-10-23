@@ -38,7 +38,7 @@
 		<div class="header-bottom-content">
 			<!-- header logo -->
 			<img src="images/logo.svg" class="logo" alt="logo">
-			<span class="menu-icon"></span>
+			<div class="header-bottom-content__menu-btn"><span class="menu-icon"></span></div>
 			<!-- header search-->
 			<form class="header-bottom-content-search">
 				<input type="search" placeholder="Поиск по сайту..." class="header-bottom-content-search__input">
@@ -51,6 +51,7 @@
 			</form>
 			<!-- header menu-->
 			<div class="header-bottom-content-menu">
+				<div class="header-bottom-content-menu__close"><span class="close-icon"></span></div>
 				<ul>
 					<li class="header-bottom-content-menu__item"><a href="#">О нас</a></li>
 					<li class="header-bottom-content-menu__item"><a href="#">Услуги</a></li>
@@ -61,7 +62,35 @@
 			</div>
 			<!-- header main-->
 			<div class="header-bottom-content-main">
-				<h1>Безопастность вашего бизнеса <br><span>в ваших руках</span></h1>
+				<h1 class="header-title">Безопастность вашего бизнеса <br><span>в ваших руках</span></h1>
+				<form class="header-form">
+					<p class="form-title">Свяжитесь с нами</p>
+					<div class="form-title__item">
+						<input type="text" placeholder="Как вас зовут?" headerName>
+						<svg class="icon icon-form icon-user">
+							<use xlink:href="images/sprite/sprite.svg#user"></use>
+						</svg>
+					</div>
+					<div class="form-title__item">
+						<input type="number" placeholder="Контактный телефон*" name="headerPhone">
+						<svg class="icon icon-form icon-call">
+							<use xlink:href="images/sprite/sprite.svg#call"></use>
+						</svg>
+					</div>
+					<div class="form-title__item">
+						<input type="text" placeholder="E - mail" name="headerEmail">
+						<svg class="icon icon-form icon-mail">
+							<use xlink:href="images/sprite/sprite.svg#mail"></use>
+						</svg>
+					</div>
+					<div class="form-title__item">
+						<textarea type="text" name="headerTextarea">Какая у вас задача?</textarea>
+						<svg class="icon icon-form icon-think">
+							<use xlink:href="images/sprite/sprite.svg#think"></use>
+						</svg>
+					</div>
+					<button type="submit" class="btn btn_blue">Отправить заявку</button>
+				</form>
 			</div>
 		</div>	
 	</div>

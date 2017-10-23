@@ -27,6 +27,20 @@ $(function(){
   });
 });
 
+//open menu
+$(".header-bottom-content__menu-btn").click(function(){
+  $('.header-bottom-content-menu').slideToggle();
+});
+
+//close menu
+$(".header-bottom-content-menu__close").click(function(){
+  $('.header-bottom-content-menu').slideToggle();
+});
+
+//form valid
+$(".header-form").validate({
+
+});
 
 })(jQuery);
 
