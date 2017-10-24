@@ -32,15 +32,67 @@ $(".header-bottom-content__menu-btn").click(function(){
   $('.header-bottom-content-menu').slideToggle();
 });
 
+//open form
+$("#open-form").click(function(){
+  $('#header-form').slideToggle();
+  // $('body').css('overflow', 'hidden');
+  // $('#header-form').css('overflow', 'scroll;');
+});
+
 //close menu
-$(".header-bottom-content-menu__close").click(function(){
+$("#close-menu").click(function(){
   $('.header-bottom-content-menu').slideToggle();
 });
 
-//form valid
-$(".header-form").validate({
-
+//close from
+$("#close-form").click(function(){
+  $('#header-form').slideToggle();
 });
+
+//form valid
+$("#header-form").validate({
+  rules:{
+
+    headerName:{
+      required: true,
+      minlength: 4,
+      maxlength: 20,
+    },
+
+    headerPhone:{
+      required: true,
+      minlength: 6,
+    },
+
+    headerEmail:{
+      required: true,
+      minlength: 6,
+    },
+  },
+
+  messages:{
+
+    headerName:{
+      required: "*Выделенные поля заполнены некорректно",
+      minlength: "*Выделенные поля заполнены некорректно",
+      maxlength: "*Выделенные поля заполнены некорректно",
+    },
+
+    headerPhone:{
+      required: "*Выделенные поля заполнены некорректно",
+      minlength: "*Выделенные поля заполнены некорректно",
+    },
+
+    headerEmail:{
+      required: "*Выделенные поля заполнены некорректно",
+      minlength: "*Выделенные поля заполнены некорректно",
+    },
+  },
+  
+  errorLabelContainer: ".error_label",
+  
+});
+
 
 })(jQuery);
 
