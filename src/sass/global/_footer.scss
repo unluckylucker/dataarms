@@ -2,7 +2,44 @@
 	 Footer
 	 ===========================================================================*/
 
+.footer-content{
+	border-top: 2px solid $grey;
+	padding: 20px 0 10px 0;
+	text-align: center;
 
+}
+/* footer logo*/
 
+.logo.logo_sm{
+	width: 231px;
+	height: 35px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	@media screen and (max-width: 979px) {
+		width: 174px;
+		height: 27px;
+	}
+	@media screen and (max-width: 767px) {
+		width: 102px;
+		height: 16px;
+	}
+}
+
+/* footer links*/
+.icon-social.icon-social_color{
+	fill: #fff;
+	stroke: #fff;
+}
+
+.copyright{
+	font-style: italic;
+	@media screen and (max-width: 979px) {
+		@include font-size(16px);
+	}
+	@media screen and (max-width: 767px) {
+		@include font-size(12px);
+	}
+}
 /* end footer */
 
