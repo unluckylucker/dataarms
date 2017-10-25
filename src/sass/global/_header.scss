@@ -14,23 +14,8 @@
 	@media screen and (max-width: 540px) {
 		height: 467px;
 	}
-    /* dark */
-	&:before {
-		content: "";
-		position:absolute;
-		width: 100%;
-		height: 804px;
-		background: rgba(0,0,0,0.3);
-		margin-top: 49px;
-		@media screen and (max-width: 979px) {
-			height: 753px;
-		}
-		@media screen and (max-width: 540px) {
-			height: 418px;
-		}
-	}
 	/* header-pic */
-	&:after{
+	&:before{
 		content: "";
 		position: absolute;
 		top: 0;
@@ -61,16 +46,7 @@
 	@media screen and (max-width: 767px) {
 		height: 320px;
 	}
-	&:before {
-		height: 451px;
-		@media screen and (max-width: 1050px) {
-			height: 507px;
-		}
-		@media screen and (max-width: 767px) {
-			height: 271px;
-		}
-	}	
-	&:after{
+	&:before{
 		height: 502px;
 		background: url(../images/rectangle.png) no-repeat 100% 100%;
 		@media screen and (max-width: 1050px) {
@@ -166,10 +142,14 @@
 /* bottom header */
 .header-bottom{
 	position: relative;
-	z-index: 2;
 }
 
-.header-bottom-content{
+.header-middle{
+	position: relative;
+	z-index: 3;
+}
+
+.header-bottom-content, .header-middle-content{
 	max-width: 1920px;
 	margin: 0 auto;
 	padding: 0 50px;
@@ -198,7 +178,7 @@
 }
 
 /* header menu */
-.header-bottom-content-menu__item{
+.header-middle-content__item{
 	list-style-type: none;
 	text-transform: uppercase;
 	float: left;
@@ -208,7 +188,7 @@
 	}
 }
 
-.form-search, .header-bottom-content-menu {
+.form-search, .header-middle-content {
 	float: right;
 	margin-top: 10px;
 }
@@ -266,7 +246,7 @@
 	color: $secondary-color;
 }
 
-.header-bottom-content-menu {
+.header-middle-content {
 	position: absolute;
 	right: 90px;
 	top: 0px;
@@ -286,7 +266,7 @@
 		height: 100%;
 		position: fixed;
 		margin-top: 49px;
-		.header-bottom-content-menu__item{
+		.header-middle-content__item{
 			float: none;
 			padding: 15px 0;
 			a{
@@ -297,7 +277,7 @@
 	@media screen and (min-width: 891px) {
 		display: block !important;
 	}
-	.header-bottom-content-menu__item{
+	.header-middle-content__item{
 		margin-bottom: 0px;
 	}
 }
@@ -485,7 +465,7 @@
     left: 50%;
     top: 400px;
     @media screen and (max-width: 540px) {
-		top: 300px;
+		top: 230px;
 	}
 	@media screen and (min-width: 768px) {
 		display: none;
