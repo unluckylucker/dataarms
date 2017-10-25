@@ -104,6 +104,13 @@ jQuery(function($){
  $("#phone").mask("+7(999) 999-9999");
 });
 
+//placeholder hide
+// jQuery(function($){
+//   if($('input').onfocus()){
+    
+//   }
+//  $("#phone").mask("+7(999) 999-9999");
+// });
 
 })(jQuery);
 
