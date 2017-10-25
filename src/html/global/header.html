@@ -43,7 +43,7 @@
 			<form class="header-bottom-content-search">
 				<input type="search" placeholder="Поиск по сайту..." class="header-bottom-content-search__input">
 				<!--search btn-->
-				<button class="btn-svg header-bottom-content-search__btn" type="button">
+				<button class="btn-empty header-bottom-content-search__btn" type="button">
 					<svg class="icon icon-search">
 						<use xlink:href="images/sprite/sprite.svg#search"></use>
 					</svg> 
@@ -51,7 +51,7 @@
 			</form>
 			<!-- header menu-->
 			<nav class="header-bottom-content-menu">
-				<div class="close-btn" id="close-menu"><span class="close-icon"></span></div>
+				<button class="close-btn btn-empty" id="close-menu"><span class="close-icon"></span></button>
 				<ul>
 					<li class="header-bottom-content-menu__item"><a href="#">О нас</a></li>
 					<li class="header-bottom-content-menu__item"><a href="#">Услуги</a></li>
@@ -65,28 +65,28 @@
 				<h1 class="header-title">Безопастность вашего бизнеса <br><span>в ваших руках</span></h1>
 				<!-- header form-->
 				<form class="form" id="header-form">
-					<div class="close-btn close-btn_position" id="close-form"><span class="close-icon close-icon_blue"></span></div>
+					<button class="close-btn close-btn_position btn-empty" id="close-form"><span class="close-icon close-icon_blue"></span></button>
 					<p class="form-title">Свяжитесь с нами</p>
-					<div class="form__item">
-						<input type="text" placeholder="Как вас зовут?" name="headerName">
+					<div class="form-input">
+						<input type="text" placeholder="Как вас зовут?" name="headerName" class="form-input__item">
 						<svg class="icon icon-form icon-user">
 							<use xlink:href="images/sprite/sprite.svg#user"></use>
 						</svg>
 					</div>
-					<div class="form__item">
-						<input type="tel" placeholder="Контактный телефон*" name="headerPhone" id="phone">
+					<div class="form-input">
+						<input type="tel" placeholder="Контактный телефон*" name="headerPhone" id="phone" class="form-input__item">
 						<svg class="icon icon-form icon-call">
 							<use xlink:href="images/sprite/sprite.svg#call"></use>
 						</svg>
 					</div>
-					<div class="form__item">
-						<input type="text" placeholder="E - mail" name="headerEmail">
+					<div class="form-input">
+						<input type="text" placeholder="E - mail" name="headerEmail" class="form-input__item">
 						<svg class="icon icon-form icon-mail">
 							<use xlink:href="images/sprite/sprite.svg#mail"></use>
 						</svg>
 					</div>
-					<div class="form__item">
-						<textarea type="text" name="headerTextarea">Какая у вас задача?</textarea>
+					<div class="form-textarea">
+						<textarea type="text" name="headerTextarea" class="form-textarea__item">Какая у вас задача?</textarea>
 						<svg class="icon icon-form icon-think">
 							<use xlink:href="images/sprite/sprite.svg#think"></use>
 						</svg>

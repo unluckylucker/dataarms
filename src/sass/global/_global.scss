@@ -147,21 +147,35 @@ address{
 	}
 }
 
-.form__item{
+.form-input{
 	margin-top: 20px;
 	position: relative;
-	input, textarea{
-		width: 100%;
-		background: #000;
-		border: 2px solid $grey;
-		color: $grey;
-		font-style: italic;
-		padding: 18px;
-		padding-left: 40px;
-	}
-	textarea{
-		height: 145px;
-	}
+}
+
+.form-input__item{
+	width: 100%;
+	background: #000;
+	border: 2px solid $grey;
+	color: $grey;
+	font-style: italic;
+	padding: 18px;
+	padding-left: 40px;
+}
+
+.form-textarea{
+	margin-top: 20px;
+	position: relative;
+}
+
+.form-textarea__item{
+	width: 100%;
+	background: #000;
+	border: 2px solid $grey;
+	color: $grey;
+	font-style: italic;
+	padding: 18px;
+	padding-left: 40px;
+	height: 145px;
 }
 
 .form-title{
