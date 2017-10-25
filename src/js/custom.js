@@ -29,7 +29,15 @@ $(function(){
 
 //open menu
 $(".header-bottom-content__menu-btn").click(function(){
-  $('.header-bottom-content-menu').slideToggle();
+  $(".header-bottom-content-menu").toggle( 
+        function() { 
+            $("#slide").hide("slide", { direction: "right" }, 1000); 
+        }, 
+        function() { 
+            $("#slide").show("slide", { direction: "right" }, 500); 
+        } 
+    );
+
 });
 
 //open form
@@ -41,7 +49,14 @@ $("#open-form").click(function(){
 
 //close menu
 $("#close-menu").click(function(){
-  $('.header-bottom-content-menu').slideToggle();
+  $(".header-bottom-content-menu").toggle( 
+        function() { 
+            $("#slide").hide("slide", { direction: "right" }, 1000); 
+        }, 
+        function() { 
+            $("#slide").show("slide", { direction: "right" }, 500); 
+        } 
+    );
 });
 
 //close from
