@@ -66,7 +66,7 @@ $("#header-form").validate({
 
     headerEmail:{
       required: true,
-      minlength: 6,
+      email: true,
     },
   },
 
@@ -85,12 +85,23 @@ $("#header-form").validate({
 
     headerEmail:{
       required: "*Выделенные поля заполнены некорректно",
-      minlength: "*Выделенные поля заполнены некорректно",
+      email: "*Выделенные поля заполнены некорректно",
     },
   },
   
   errorLabelContainer: ".error_label",
-  
+  groups: {
+    inputGroup: "headerName headerPhone  headerEmail",      
+  },
+  submitHandler: function(form) { 
+    alert('valid form');
+    return false;
+  }
+});
+
+//mask for phone
+jQuery(function($){
+ $("#phone").mask("+7(999) 999-9999");
 });
 
 

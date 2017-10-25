@@ -19,12 +19,12 @@
 					<use xlink:href="images/sprite/sprite.svg#mail"></use>
 				</svg> 
 			</a>
-			<a href="#" class="header-top-content__location">
+			<span class="header-top-content__location">
 				<svg class="icon icon-location icon-contacts">
 					<use xlink:href="images/sprite/sprite.svg#location"></use>
 				</svg>
 				<span>г. Одинцово, ул. Ново-спортивная, д. 4, корпус 2, офис 1</span>
-			</a>
+			</span>
 			<a href="tel:+88003334460" class="header-top-content__phone">
 				<svg class="icon icon-call icon-contacts">
 					<use xlink:href="images/sprite/sprite.svg#call"></use>
@@ -37,7 +37,7 @@
 	<div class="header-bottom">
 		<div class="header-bottom-content">
 			<!-- header logo -->
-			<img src="images/logo.svg" class="logo" alt="logo">
+			<a href="./"><img src="images/logo.svg" class="logo" alt="logo"></a>
 			<div class="header-bottom-content__menu-btn"><span class="menu-icon"></span></div>
 			<!-- header search-->
 			<form class="header-bottom-content-search">
@@ -74,7 +74,7 @@
 						</svg>
 					</div>
 					<div class="form__item">
-						<input type="number" placeholder="Контактный телефон*" name="headerPhone">
+						<input type="tel" placeholder="Контактный телефон*" name="headerPhone" id="phone">
 						<svg class="icon icon-form icon-call">
 							<use xlink:href="images/sprite/sprite.svg#call"></use>
 						</svg>

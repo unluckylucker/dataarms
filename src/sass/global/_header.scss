@@ -346,7 +346,7 @@
 /* header search */
 .header-bottom-content-search{
 	position: relative;
-	z-index: 1;
+	z-index: 3;
 }
 
 .header-bottom-content-search__input{
@@ -481,9 +481,7 @@
 	}
 }
 
-label[class="error"]{
-	
-}
+
 
 
 
