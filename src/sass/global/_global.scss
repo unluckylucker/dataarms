@@ -190,7 +190,7 @@ address{
 }
 
 /* error form */
-input[class="error"]{
+input[class*="error"]{
 	border: 2px solid $error !important;
 } 
 

@@ -3,8 +3,8 @@
 	/*==========FOR SVG ==============*/
 	svg4everybody();
 //search header
-$(".header-bottom-content-search__btn").click(function(){
-  $('.header-bottom-content-search__input').toggleClass('active');
+$(".form-search__btn").click(function(){
+  $('.form-search__input').toggleClass('active');
   if ($(window).width() >= '890'){
     $('.header-bottom-content-menu').animate({opacity: 0});
   } 
@@ -17,12 +17,12 @@ $(".header-bottom-content-search__btn").click(function(){
 
 $(function(){
   $(document).click(function(event) {
-    if ($(event.target).closest(".header-bottom-content-search").length) return;
-      $('.header-bottom-content-search__input').removeClass('active');
+    if ($(event.target).closest(".form-search").length) return;
+      $('.form-search__input').removeClass('active');
       if ($(window).width() >= '890'){
-        $('.header-bottom-content-menu').delay(1000).animate({opacity: 1});
+        $('.header-bottom-content-menu').delay(300).animate({opacity: 1});
       }
-      $('.header-bottom-content-search__btn').removeClass('clicked');
+      $('.form-search__btn').removeClass('clicked');
       event.stopPropagation();
   });
 });
@@ -104,13 +104,6 @@ jQuery(function($){
  $("#phone").mask("+7(999) 999-9999");
 });
 
-//placeholder hide
-// jQuery(function($){
-//   if($('input').onfocus()){
-    
-//   }
-//  $("#phone").mask("+7(999) 999-9999");
-// });
 
 })(jQuery);
 
