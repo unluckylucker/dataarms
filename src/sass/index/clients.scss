@@ -1,0 +1,70 @@
+/* ==========================================================================
+	 Clients
+	 ===========================================================================*/
+.clients{
+	position: relative;
+	padding-top: 208px;
+	@media screen and (max-width: 979px) {
+		padding-top: 157px;
+	}
+	@media screen and (max-width: 767px) {
+		padding-top: 109px;
+	}
+}
+
+.clients-title{
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	background: $primary-color;
+	padding-right: 20px;
+}
+/* slider */
+.slider{
+	border: 10px solid $secondary-color;
+	// height: 300px;
+}
+
+.slider-slide{
+	vertical-align: middle;
+	padding: 50px 25px;
+	cursor: pointer;
+}
+
+.slider-slide-content{
+	margin: 0 auto;
+	max-width: 960px;
+	@media screen and (max-width: 1200px) {
+		max-width: 770px;
+	}
+}
+
+.slider-slide-content__img{
+	float: left;
+	margin-right: 41px;
+	@media screen and (max-width: 979px) {
+		width: 205px;
+	}
+	@media screen and (max-width: 767px) {
+		float: none;
+		width: 131px;
+	}
+}
+
+.slider-slide-content__text{
+	vertical-align: top;
+	padding-top: 10px;
+	@media screen and (max-width: 979px) {
+		@include font-size(16px);
+
+	}
+	@media screen and (max-width: 767px) {
+		@include font-size(14px);
+		line-height: 2;
+	}
+}
+
+
+
+/* end clients */
+

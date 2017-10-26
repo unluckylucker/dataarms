@@ -29,12 +29,12 @@
 		line-height: 2;
 	}
 }
-
+/* favor block bg */
 .favor-block_big{
 	background: url(../images/code.png);
 	background-size: cover;
 }
-
+/* favor block sm */
 .favor-block_sm{
 	background: url(../images/work.png);
 	background-size: cover;
@@ -43,6 +43,7 @@
 	}
 }
 
+/* favor block price */
 .favor-price{
 	border: 10px solid $grey;
 	padding: 20px;

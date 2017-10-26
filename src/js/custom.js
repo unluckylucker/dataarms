@@ -128,5 +128,11 @@ $(".anchor").click(function() {
   }, 800);
   return false;
 });
+
+//slick
+$('.slider').slick({
+  
+});
+
 })(jQuery);
 
