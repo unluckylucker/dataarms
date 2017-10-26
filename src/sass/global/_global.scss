@@ -47,6 +47,13 @@ body {
 /* CUSTOM STYLE FOR GRID */
 .container{
 	width: 100%;
+	padding: 0 50px;
+	@media screen and (max-width: 1240px) {
+		padding: 0 20px;
+	}
+	@media screen and (max-width: 979px) {
+		padding: 0 10px;
+	}
 }
 .left{
 	float: left;

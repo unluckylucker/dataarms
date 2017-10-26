@@ -41,6 +41,13 @@ button:focus,
 	white-space: nowrap;
 	-webkit-appearance: inherit;
 	padding: 0 20px;
+	&:hover{
+		-ms-filter: brightness(70%);
+		-webkit-filter: brightness(70%);
+		-moz-filter: brightness(70%);
+		-o-filter: brightness(70%);
+		filter: brightness(70%);
+	}
 	&.btn_full{
 		width: 100%;
 		min-width: 0;
