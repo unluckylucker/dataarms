@@ -26,11 +26,16 @@
 
 //home
 @import "index/about.scss";
+@import "index/favor.scss";
 
 
 
 //ui
 @import "ui/ui.scss";
+
+//plugins
+@import "plugins/slick.scss";
+@import "plugins/slick-theme.scss";
 
 //navigation pages
 @import "global/helpers/_pages.scss";

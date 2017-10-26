@@ -97,14 +97,7 @@
 	}
 }
 
-.h3-title{
-	text-transform: uppercase;
-	margin: 0;
-	line-height: 1.2;
-	@media screen and (max-width: 767px) {
-		@include font-size(14px);
-	}
-}
+
 
 .about-features-block-content__text{
 	color: $grey;
@@ -115,5 +108,5 @@
 		@include font-size(12px);
 	}
 }
-/* end home */
+/* end about */
 

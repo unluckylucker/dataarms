@@ -52,6 +52,9 @@ button:focus,
 		width: 100%;
 		min-width: 0;
 	}
+	@media screen and (max-width: 979px) {
+		@include font-size(16px);
+	}
 }
 
 
@@ -86,8 +89,31 @@ button[type="button"]{
 	border-color: #000;
 }
 
-.btn-empty{
+.btn_empty{
 	background: transparent;
 	border: none;
 }
+
+.wrapper-btn{
+	position: absolute;
+	background: $primary-color;
+	width: 40%;
+	padding-left: 30px;
+	margin-left: -20px;
+	bottom: -10px;
+	z-index: 1;
+	@media screen and (max-width: 979px) {
+		width: 60%;
+	}
+	@media screen and (max-width: 767px) {
+		width: 80%;
+		padding-left: 10px;
+		margin-left: -20px;
+		.btn{
+			width: 196px;
+			@include font-size(14px);
+		}
+	}
+}
+
 /* end buttons */

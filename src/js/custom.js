@@ -119,6 +119,14 @@ jQuery(function($){
  $("#phone").mask("+7(999) 999-9999");
 });
 
-
+//anchor
+$(".anchor").click(function() {
+  var elementClick = $('.contacts')
+  var destination = $(elementClick).offset().top;
+  jQuery("html:not(:animated),body:not(:animated)").animate({
+    scrollTop: destination
+  }, 800);
+  return false;
+});
 })(jQuery);
 

@@ -1,0 +1,78 @@
+/* ==========================================================================
+	 Favor
+	 ===========================================================================*/
+/* favor block */
+
+.favor-block{
+	height: 339px;
+	padding: 20px 20px;
+	margin-top: 20px;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 100px;
+	button{
+		position: absolute !important;
+		bottom: 20px;
+	}
+	@media screen and (max-width: 767px) {
+		margin: 20px -15px 0 -15px;
+		height: auto;	
+	}
+}
+
+.favor-block__text{
+	@media screen and (max-width: 979px) {
+		@include font-size(16px);
+	}
+	@media screen and (max-width: 767px) {
+		@include font-size(14px);
+		line-height: 2;
+	}
+}
+
+.favor-block_big{
+	background: url(../images/code.png);
+	background-size: cover;
+}
+
+.favor-block_sm{
+	background: url(../images/work.png);
+	background-size: cover;
+	p{
+		color: #000;
+	}
+}
+
+.favor-price{
+	border: 10px solid $grey;
+	padding: 20px;
+	position: relative;
+	min-height: 160px;
+	margin-top: 20px;
+	@media screen and (max-width: 767px) {
+		height: 180px;
+	}
+	&:after{
+		position: absolute;
+		content: '';
+		top: -13px;
+		right: -37px;
+		width: 300px;
+		height: 160px;
+		background: url(../images/color-line.png) no-repeat;
+		background-size: 232px 184px;
+		@media screen and (max-width: 767px) {
+			top: -29px;
+			right: -103px;
+		}
+	}
+}
+
+
+
+
+
+
+
+/* end favor */
+
