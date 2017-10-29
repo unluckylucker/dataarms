@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "air-datepicker": "^2.2.3",
-    "chart.js": "^2.6.0"
+    "chart.js": "^2.6.0",
+    "node-notifier": "^5.1.2"
   }
 }

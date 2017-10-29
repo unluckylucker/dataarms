@@ -14,7 +14,7 @@
 
 .clients-title{
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 	top: 0;
 	background: $primary-color;
 	padding-right: 20px;
@@ -22,6 +22,7 @@
 /* slider */
 .slider{
 	border: 10px solid $secondary-color;
+	z-index: 1;
 	// height: 300px;
 }
 
@@ -30,6 +31,7 @@
 	padding: 50px 25px;
 	cursor: pointer;
 	outline: 0;
+	background: $primary-color;
 }
 
 .slider-slide-content{
@@ -65,7 +67,83 @@
 	}
 }
 
+/* clients communications */
+.clients-communications{
+	position: relative;
+	padding-top: 70px;
+	&:before{
+		content: '';
+		width: 351px;
+		height: 345px;
+		position: absolute;
+		background: url(../images/globe-full.png) no-repeat;
+		top: -44px;
+		right: 0;
+		background-size: cover;
+	}
+}
 
+.clients-communications-information{
+	width: 50%;
+	float: left;
+	margin-top: 50px;
+	@media screen and (max-width: 1200px) {
+		margin-top: 30px;
+	}
+	@media screen and (max-width: 767px) {
+		width: 100%;
+		.btn{
+			margin: 0 auto;
+			display: block;
+			margin-top: 30px;
+			margin-bottom: 10px;
+		}
+	}
+}
 
+.clients-communications__phone{
+	float: right;
+	font-family: Ubuntu;
+	font-weight: 700;
+	@include font-size(72px);
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	span{
+		position: absolute;
+		top: -89px;
+		left: -176px;
+		color: #929292;
+		@include font-size(110px);
+		z-index: -1;
+	}
+	@media screen and (max-width: 1200px) {
+		@include font-size(59px);
+		span{
+			@include font-size(90px);
+			top: -70px;
+			left: -145px;
+		}
+		
+	}
+	@media screen and (max-width: 979px) {
+		@include font-size(48px);
+		span{
+			@include font-size(72px);
+			top: -55px;
+			left: -82px;
+		}
+		
+	}
+}
+
+.clients-communications-information__text{
+	@media screen and (max-width: 979px) {
+		@include font-size(16px);
+	}
+	@media screen and (max-width: 979px) {
+		@include font-size(14px);
+	}
+}
 /* end clients */
 
