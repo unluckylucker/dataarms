@@ -7,6 +7,13 @@
 	margin-bottom: 50px;
 }
 
+.tab-content-slide{
+	display: none;
+}
+
+.tab-content-slide.tab-content-slide1{
+	display: block;
+}
 /* tab btn */
 .tab-menu__button{
 	display: inline-block;
@@ -74,6 +81,33 @@
 	@media screen and (min-width: 768px) {
 		width: 48%;
 		float: left;
+	}
+}
+
+/* tab map links */
+.tab-content-slide-links, .tab-content-slide-map{
+	width: 50%;
+	float: left;
+	height: 371px;
+}
+
+.link__contact.position, .link__location.position{
+	float: left;
+}
+
+.tab-content-slide-links{
+	padding-right: 20px;
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+	a, span{
+		margin-bottom: 40px;
+	}
+}
+
+.tab-content-slide-map{
+	@media screen and (max-width: 767px) {
+		width: 100%;
 	}
 }
 /* end contacts */

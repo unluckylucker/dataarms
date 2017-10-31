@@ -40,15 +40,68 @@
 					</div>
 					<span class="error_label-contacts"></span>
 					<button type="submit" class="btn btn_blue">Отправить заявку</button>
+				</form>
+			</div>
+			<div class="tab-content-slide tab-content-slide2 clearfix">
+				<div class="tab-content-slide-links">
+					<a href="tel:+88003334460" class="link__contact position">
+						<svg class="icon icon-call icon-contacts">
+							<use xlink:href="images/sprite/sprite.svg#call"></use>
+						</svg>
+						<span>8-800-333-44-60</span>
+					</a>
+					<span class="link__location position">
+						<svg class="icon icon-location icon-contacts">
+							<use xlink:href="images/sprite/sprite.svg#location"></use>
+						</svg>
+						<span>г. Одинцово, ул. Ново-спортивная, д. 4, корпус 2, офис 1</span>
+					</span>
+					<a href="mailto:dataarms@gmail.com" class="link__contact position">
+						<svg class="icon icon-call icon-contacts">
+							<use xlink:href="images/sprite/sprite.svg#mail"></use>
+						</svg>
+						<span>E-mail: dataarms@gmail.com</span>
+					</a>
 				</div>
-				<div class="tab-content-slide tab-content-slide2 clearfix">
-					<div class="tab-content-slide-links">
-						
-					</div>
-					<div class="tab-content-slide-map">
-						
-					</div>
+				<div class="tab-content-slide-map" id="map">
+					<script>
+				      function initMap() {
+				        var myLatLng = {lat: 59.95781779911191, lng: 30.301868773155203};
+
+				        // Create a map object and specify the DOM element for display.
+				        var map = new google.maps.Map(document.getElementById('map'), {
+				          center: {lat: 59.95781779911191, lng: 30.301868773155203},
+				         
+
+				          scrollwheel: true,
+				          zoom: 16
+				        });
+
+				        // Create a marker and set its position.
+				        var marker = new google.maps.Marker({
+				          map: map,
+				          position: myLatLng,
+				          icon: {
+				           url: 'images/marker.png', 
+				           labelOrigin: new google.maps.Point(145, 50),
+				          },
+				          title: 'DataArms'
+				        });
+
+				        var firstInitMap = false;
+				        jQuery(document).ready(function ($) {
+				        	$('div[data-num="2"]').on('click', function (e) {
+				        		if(firstInitMap == false){
+				        			initMap();
+				        			firstInitMap = true;
+				        		}
+				        	})
+				        });
+				      }
+        			</script>
+        			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGj-s-njAT7usamQuFKhAILiLZMLg1kT0&callback=initMap" async defer></script>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
