@@ -1,0 +1,80 @@
+/* ==========================================================================
+	 Contacts
+	 ===========================================================================*/
+
+/* tab menu */
+.tab-menu{
+	margin-bottom: 50px;
+}
+
+/* tab btn */
+.tab-menu__button{
+	display: inline-block;
+	cursor: pointer;
+	color: #fff;
+	@include font-size(24px);
+	font-family: Ubuntu;
+	font-weight: 700;
+	text-transform: uppercase;
+	opacity: 0.4;
+	width: 48%;
+	@media screen and (max-width: 979px) {
+		@include font-size(18px);
+	}
+	@media screen and (max-width: 767px) {
+		@include font-size(14px);
+		text-align: center !important;
+	}
+	span{
+		padding-bottom: 5px;
+	}	
+}
+.cssarrow {
+	position: relative;
+	border-bottom: 1px solid #20bdff;
+}
+.cssarrow:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: #20bdff;
+	border-width: 10px;
+	margin-left: -10px;
+}
+
+.tab-menu__button.left{
+	text-align:  right;
+}
+
+.tab-menu__button_active{
+	opacity: 1;
+}
+
+/* tab form */
+.tab-content-slide__form{
+	padding: 0 0 44px 0;
+	.form-textarea{
+		@media screen and (min-width: 768px) {
+			width: 48%;
+			float: right;
+			height: 223px;
+			.form-textarea__item{
+				height: 100%;
+			}
+		}
+	}	
+}
+.wrapper-input{
+	@media screen and (min-width: 768px) {
+		width: 48%;
+		float: left;
+	}
+}
+/* end contacts */
+

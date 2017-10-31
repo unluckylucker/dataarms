@@ -114,9 +114,59 @@ $("#header-form").validate({
   }
 });
 
+$(".tab-content-slide__form").validate({
+  rules:{
+
+    contactsName:{
+      required: true,
+      minlength: 4,
+      maxlength: 20,
+    },
+
+    contactsPhone:{
+      required: true,
+      minlength: 6,
+    },
+
+    contactsEmail:{
+      required: true,
+      email: true,
+    },
+  },
+
+  messages:{
+
+    contactsName:{
+      required: "*Выделенные поля заполнены некорректно",
+      minlength: "*Выделенные поля заполнены некорректно",
+      maxlength: "*Выделенные поля заполнены некорректно",
+    },
+
+    contactsPhone:{
+      required: "*Выделенные поля заполнены некорректно",
+      minlength: "*Выделенные поля заполнены некорректно",
+    },
+
+    contactsEmail:{
+      required: "*Выделенные поля заполнены некорректно",
+      email: "*Выделенные поля заполнены некорректно",
+    },
+  },
+  
+  errorLabelContainer: ".error_label-contacts",
+  groups: {
+    inputGroup: "contactsName contactsPhone  contactsEmail",      
+  },
+  submitHandler: function(form) { 
+    alert('valid form');
+    return false;
+  }
+});
+
 //mask for phone
 jQuery(function($){
  $("#phone").mask("+7(999) 999-9999");
+ $("#phone2").mask("+7(999) 999-9999");
 });
 
 //anchor
@@ -133,6 +183,18 @@ $(".anchor").click(function() {
 $('.slider').slick({
   
 });
+
+//tabs
+$('.tab-menu__button').click(function(){
+  var num = $(this).data('num');
+  $('.tab-content-slide').hide();
+  $('.tab-content-slide'+num).show();
+  $('.tab-menu__button').removeClass('tab-menu__button_active');
+  $(this).addClass('tab-menu__button_active');
+  $('.tab-menu__button span').removeClass('cssarrow');
+  $(this).children().addClass('cssarrow');
+});
+     
 
 })(jQuery);
 

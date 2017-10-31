@@ -3,7 +3,9 @@
 	 ===========================================================================*/
 
 /* Article block */
-
+.article{
+	padding-bottom: 30px;
+}
 .article-block{
 	display: block;
 	height: 326px;
@@ -11,6 +13,9 @@
 	background: #3b3b3b;
 	margin-bottom: 15px;
 	overflow: hidden;
+	@media screen and (max-width: 979px) {
+		height: 226px;
+	}
 	&:hover{
 		.btn.btn_center{
 			display: block;
@@ -44,8 +49,13 @@
 	@media screen and (max-width: 1200px) {
 		width: 236px;
 	}
+	@media screen and (max-width: 979px) {
+		width: 50%;
+		margin-right: 0px;
+	}
 	img{
 		height: 100%;
+		width: 100%;
 	}
 }
 
@@ -54,6 +64,11 @@
 	margin-left: 263px;
 	@media screen and (max-width: 1200px) {
 		margin-left: 236px;
+	}
+	@media screen and (max-width: 979px) {
+		width: 50%;
+		margin-left: 0px;
+		float: right;
 	}
 }
 
@@ -85,6 +100,12 @@
 	@include font-size(16px);
 	border-bottom: 1px solid #5d5d5d;
 	padding-bottom: 10px;
+	@media screen and (max-width: 979px) {
+		@include font-size(14px);
+	}
+	@media screen and (max-width: 767px) {
+		@include font-size(12px);
+	}
 }
 
 /* icon */

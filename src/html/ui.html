@@ -36,30 +36,31 @@
 						<p>Form</p>
 						<form class="form">
 							<p class="form-title">Свяжитесь с нами</p>
-							<div class="form__item">
-								<input type="text" placeholder="Как вас зовут?" name="headerName">
+							<div class="form-input">
+								<input type="text" placeholder="Как вас зовут?" name="headerName" class="form-input__item">
 								<svg class="icon icon-form icon-user">
 									<use xlink:href="images/sprite/sprite.svg#user"></use>
 								</svg>
 							</div>
-							<div class="form__item">
-								<input type="number" placeholder="Контактный телефон*" name="headerPhone">
+							<div class="form-input">
+								<input type="tel" placeholder="Контактный телефон*" name="headerPhone" id="phone" class="form-input__item">
 								<svg class="icon icon-form icon-call">
 									<use xlink:href="images/sprite/sprite.svg#call"></use>
 								</svg>
 							</div>
-							<div class="form__item">
-								<input type="text" placeholder="E - mail" name="headerEmail">
+							<div class="form-input">
+								<input type="text" placeholder="E - mail" name="headerEmail" class="form-input__item">
 								<svg class="icon icon-form icon-mail">
 									<use xlink:href="images/sprite/sprite.svg#mail"></use>
 								</svg>
 							</div>
-							<div class="form__item">
-								<textarea type="text" name="headerTextarea">Какая у вас задача?</textarea>
+							<div class="form-textarea">
+								<textarea type="text" name="headerTextarea" class="form-textarea__item" placeholder="Какая у вас задача?"></textarea>
 								<svg class="icon icon-form icon-think">
 									<use xlink:href="images/sprite/sprite.svg#think"></use>
 								</svg>
 							</div>
+							<span class="error_label"></span>
 							<button type="submit" class="btn btn_blue">Отправить заявку</button>
 						</form>
 					</div>	

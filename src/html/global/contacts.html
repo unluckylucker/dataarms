@@ -1,1 +1,54 @@
 <!-- contacts -->
+<section class="contacts">
+	<h1>Контакты<span class="h1-bg">05</span></h1>
+	<!-- tab -->
+	<div class="tab">
+		<!-- tab menu -->
+		<div class="tab-menu clearfix">
+			<div class="tab-menu__button tab-menu__button_active left" data-num="1"><span class="cssarrow">Связаться с нами</span></div>
+			<div class="tab-menu__button right" data-num="2"><span>Адрес</span></div>
+		</div>
+		<!-- tab content -->
+		<div class="tab-content">
+			<div class="tab-content-slide tab-content-slide1">
+				<form class="form tab-content-slide__form">
+					<div class="wrapper-input">
+						<div class="form-input">
+							<input type="text" placeholder="Как вас зовут?" name="contactsName" class="form-input__item">
+							<svg class="icon icon-form icon-user">
+								<use xlink:href="images/sprite/sprite.svg#user"></use>
+							</svg>
+						</div>
+						<div class="form-input">
+							<input type="tel" placeholder="Контактный телефон*" name="contactsPhone" id="phone2" class="form-input__item">
+							<svg class="icon icon-form icon-call">
+								<use xlink:href="images/sprite/sprite.svg#call"></use>
+							</svg>
+						</div>
+						<div class="form-input">
+							<input type="text" placeholder="E - mail" name="contactsEmail" class="form-input__item">
+							<svg class="icon icon-form icon-mail">
+								<use xlink:href="images/sprite/sprite.svg#mail"></use>
+							</svg>
+						</div>
+					</div>	
+					<div class="form-textarea">
+						<textarea type="text" name="contactsTextarea" class="form-textarea__item" placeholder="Какая у вас задача?"></textarea>
+						<svg class="icon icon-form icon-think">
+							<use xlink:href="images/sprite/sprite.svg#think"></use>
+						</svg>
+					</div>
+					<span class="error_label-contacts"></span>
+					<button type="submit" class="btn btn_blue">Отправить заявку</button>
+				</div>
+				<div class="tab-content-slide tab-content-slide2 clearfix">
+					<div class="tab-content-slide-links">
+						
+					</div>
+					<div class="tab-content-slide-map">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
