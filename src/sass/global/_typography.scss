@@ -3,7 +3,7 @@
    ===========================================================================*/
 /* TITLES */
 
-h1{
+.h1, h1{
 	font-family: $ff-title;
 	@include font-size($fz-h1);
 	color: $title-color;

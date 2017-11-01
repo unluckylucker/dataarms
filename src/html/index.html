@@ -8,9 +8,23 @@
 				<div class="container">
 					@@include('index/about.html')
 					@@include('index/favor.html')
-					@@include('index/clients.html')
-					@@include('index/article.html')
-					@@include('global/contacts.html')
+					<!-- clients -->
+					<section class="clients">
+						<h2 class="clients-title h1">Наши клиенты<span class="h1-bg">03</span></h2>
+						@@include('index/clients-slider.html')
+						@@include('index/clients-communications.html')
+					</section>
+					<!-- article -->
+					<section class="article clearfix">
+						<h2 class="h1">Статьи<span class="h1-bg">04</span></h2>
+						@@include('index/article-block.html')
+						<button type="button" class="btn right">Читать все статьи</button>
+					</section>
+					<!-- contacts -->
+					<section class="contacts">
+						<h2 class="h1">Контакты<span class="h1-bg">05</span></h2>
+						@@include('global/contacts.html')
+					</section>
 				</div>
 			</main>
 		</div>

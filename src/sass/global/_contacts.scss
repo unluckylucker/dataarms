@@ -2,6 +2,22 @@
 	 Contacts
 	 ===========================================================================*/
 
+.contacts{
+	position: relative;
+	&:before{
+		position: absolute;
+		content: '';
+		width: 248px;
+		height: 248px;
+		top: 286px;
+		left: -50px;
+		background: url(../images/globe-full.png) no-repeat;
+		background-size: 248px 248px;
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
+	}
+}
 /* tab menu */
 .tab-menu{
 	margin-bottom: 50px;
@@ -63,6 +79,18 @@
 	opacity: 1;
 }
 
+.tab-content{
+	&:before{
+		position: absolute;
+		content: '';
+		width: 248px;
+		height: 248px;
+		top: 170px;
+		right: -50px;
+		background: url(../images/globe-full.png) no-repeat;
+		background-size: 248px 248px;
+	}
+}
 /* tab form */
 .tab-content-slide__form{
 	padding: 0 0 44px 0;
