@@ -1,0 +1,60 @@
+/* ==========================================================================
+	 Error
+	 ===========================================================================*/
+
+.error__main{
+	color: $secondary-color;
+	font-weight: 700;
+	font-family: Ubuntu;
+	text-transform: uppercase;
+	line-height: 1;
+	margin-bottom: 50px;
+	margin-top: 100px;
+	@include font-size(72px);
+	span{
+		@include font-size(300px);
+	}
+	@media screen and (max-width: 979px) {
+		@include font-size(61px);
+		span{
+			@include font-size(253px);
+
+		}
+	}
+	@media screen and (max-width: 767px) {
+		@include font-size(25px);
+		span{
+			@include font-size(102px);
+
+		}
+	}
+}
+
+.error__text{
+	@include font-size(24px);
+	color: #bbb;
+	position: absolute;
+	@media screen and (max-width: 767px) {
+		@include font-size(14px);
+	}
+}
+
+.error__link{
+	text-transform: uppercase;
+	text-decoration: underline;
+	color: $secondary-color;
+	font-weight: 700;
+	display: block;
+    margin-top: 160px;
+	&:hover{
+		text-decoration: none;
+		color: $secondary-color;
+	}
+	@media screen and (max-width: 767px) {
+		@include font-size(14px);
+	}
+}
+
+
+/* end error */
+
