@@ -20,7 +20,43 @@
 }
 
 /* it-audit */
+.it-audit{
+	padding-bottom: 100px;
+}
+/* it-audit block*/
+.it-audit-block{
+	height: 230px;
+	text-align: center;
+	margin-top: 30px;
+}
 
+.it-audit-block__text{
+	font-family: Ubuntu;
+	font-weight: 700;
+	@media screen and (max-width: 979px) {
+		@include font-size(16px);
+	}
+	@media screen and (max-width: 767px) {
+		@include font-size(14px);
+	}
+}
 
+/* it-audit block img */
+.it-audit-block__img{
+	display: inline-block;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	border: 3px solid #939393;
+	box-shadow: 0 0 0 10px $primary-color inset, 0 0 0 12px #939393 inset;
+}
+
+.icon-audit{
+	width: 36px;
+	height: 36px;
+	fill: #939393;
+	stroke: #939393;
+	margin-top: 45px;
+}
 /* end audit */
 

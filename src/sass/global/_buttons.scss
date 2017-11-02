@@ -83,6 +83,15 @@ button[type="button"]{
 	width: 208px;
 }
 
+.btn.btn_save{
+	width: 336px;
+	line-height: 55px;
+	@media screen and (max-width: 767px) {
+		width: 300px;
+		@include font-size(14px);
+	}
+}
+
 .btn.btn_transparent{
 	background: transparent;
 	color: #000;

@@ -1,0 +1,40 @@
+/* ==========================================================================
+	 document
+	 ===========================================================================*/
+
+.document{
+	background: url(../images/globe-doc.png) no-repeat bottom right, #f0f0f1;
+	padding: 10px 0 60px 0;
+	@media screen and (max-width: 1200px) {
+		background: url(../images/globe-doc.png) no-repeat calc(100% + 450px) 100%, #f0f0f1;
+	}
+	@media screen and (max-width: 767px) {
+		background: #f0f0f1;
+	}
+}
+
+.document-content-list{
+	margin-left: 22px;
+	max-width: 730px;
+}
+
+.document-content-list__item{
+	@media screen and (max-width: 979px) {
+		@include font-size(16px);
+	}
+	@media screen and (max-width: 767px) {
+		@include font-size(14px);
+	}
+}
+
+.icon-save{
+	width: 24px;
+	height: 26px;
+	fill: $secondary-color;
+	stroke: $secondary-color;
+	margin-right: 15px;
+	vertical-align: middle;
+}
+
+/* end document */
+
