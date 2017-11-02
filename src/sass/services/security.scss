@@ -1,0 +1,61 @@
+/* ==========================================================================
+	 security
+	 ===========================================================================*/
+
+.security{
+	position: relative;
+	@media screen and (min-width: 1201px) {
+		background: url(../images/security.png) no-repeat center;
+	}
+	height: 373px;
+	@media screen and (max-width: 1200px) {
+		background: url(../images/security-min.png) no-repeat;
+		background-size: cover;
+	}
+	@media screen and (max-width: 979px) {
+		height: 342px;
+	}
+	@media screen and (max-width: 767px) {
+		height: 228px;
+		background: url(../images/security-xs.png) no-repeat;
+		.btn{
+			width: 181px;
+			height: 48px;
+			@include font-size(14px);
+		}
+	}
+	&:before{
+		content: '';
+		width: 347px;
+		height: 214px;
+		position: absolute;
+		background: url(../images/color-line.png) no-repeat;
+		top: -214px;
+		right: 0;
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
+	}
+}
+
+/* security content*/
+.security-content{
+	float: right;
+	width: 55%;
+	@media screen and (max-width: 767px) {
+		width: 90%;
+	}
+}
+
+.security-content__text{
+	margin-bottom: 40px;
+	@media screen and (max-width: 979px) {
+		@include font-size(16px);
+	}
+	@media screen and (max-width: 767px) {
+		@include font-size(14px);
+		margin-bottom: 20px;
+	}
+}
+
+/* end security */

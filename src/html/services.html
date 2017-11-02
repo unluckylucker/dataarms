@@ -6,7 +6,22 @@
 		<div class="wrapper">
 			<main>
 				<div class="container">
-					<h1 class="h1">Аудит информационной безопастности</h1>
+					<!-- audit -->
+					<section class="audit">
+						<h1 class="h1 h1_margin h1_fz">Аудит информационной безопастности</h1>
+						@@include('services/audit.html')
+					</section>
+				</div>	
+				<!-- security -->
+				<section class="security">
+					<div class="container">
+						@@include('services/security.html')
+					</div>
+				</section>
+				<div class="container">
+					<section class="it-audit">
+						<h2 class="h2">Когда нужен ит-аудит?</h2>
+					</section>
 					<!-- clients -->
 					<section class="clients">
 						<h2 class="clients-title h1">Наши клиенты</h2>
@@ -14,7 +29,7 @@
 					</section>
 					<!-- contacts -->
 					<section class="contacts">
-						<h2 class="h1">Контакты</h2>
+						<h2 class="h1 h1_margin">Контакты</h2>
 						@@include('global/contacts.html')
 					</section>
 				</div>

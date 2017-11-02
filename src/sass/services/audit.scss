@@ -1,0 +1,26 @@
+/* ==========================================================================
+	 Audit
+	 ===========================================================================*/
+
+.audit__text{
+	margin-bottom: 40px;
+	@media screen and (max-width: 979px) {
+		@include font-size(16px);
+		line-height: 2;
+	}
+	@media screen and (max-width: 767px) {
+		@include font-size(14px);
+	}
+}
+
+.h1.h1_fz{
+	@media screen and (max-width: 767px) {
+		@include font-size(24px);
+	}
+}
+
+/* it-audit */
+
+
+/* end audit */
+

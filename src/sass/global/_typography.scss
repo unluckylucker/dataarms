@@ -44,12 +44,36 @@
 	}
 }
 
-h2{
+.h1.h1_margin{
+	margin-top: 90px;
+	margin-left: 0px;
+}
+
+.h2, h2{
 	font-family: $ff-title;
 	@include font-size($fz-h2);
 	color: $title-color;
 	line-height:$title-lh;
 	font-weight: $title-fw;
+	@media screen and (max-width: 979px) {
+		@include font-size(24px);
+	}
+	@media screen and (max-width: 767px) {
+		@include font-size(18px);
+	}
+}
+
+.h2.h2_blue{
+	color: $secondary-color;
+	@media screen and (max-width: 1200px) {
+		@include font-size(30px);
+	}
+	@media screen and (max-width: 979px) {
+		@include font-size(24px);
+	}
+	@media screen and (max-width: 767px) {
+		@include font-size(18px);
+	}
 }
 
 h3{
