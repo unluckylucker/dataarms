@@ -125,5 +125,32 @@
 	vertical-align: middle;
 	margin-right: 5px;
 }
+
+/* Article block wide */
+.article.article_wide{
+	.col-md-6, .col-sm-6{
+		width: 100%;
+		&:nth-child(even){
+			.article-block__img{
+				float: right;
+			}
+			.article-block-content{
+				float: left;
+			}
+		}
+	}
+	.article-block__img{
+		width: 50%;
+		float: left;
+		margin-right: 0;
+	}
+	.article-block-content{
+		width: 50%;
+		margin-left: 0;
+		float: right;
+	}
+}
+
+
 /* end article */
 
