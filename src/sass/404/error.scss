@@ -23,9 +23,10 @@
 	}
 	@media screen and (max-width: 767px) {
 		@include font-size(25px);
+		margin-top: 31px;
+		margin-bottom: 10px;
 		span{
 			@include font-size(102px);
-
 		}
 	}
 }
@@ -45,7 +46,7 @@
 	color: $secondary-color;
 	font-weight: 700;
 	display: block;
-    margin-top: 160px;
+    margin-top: 190px;
 	&:hover{
 		text-decoration: none;
 		color: $secondary-color;
@@ -53,7 +54,37 @@
 	@media screen and (max-width: 767px) {
 		@include font-size(14px);
 	}
+	@media screen and (max-width: 767px) {
+		margin-top: 100px;
+	}
 }
+
+/* search */
+.search{
+	margin-top: 60px;
+}
+
+.search__input{
+	background: transparent;
+	border: 2px solid #848484;
+	height: 60px;
+	vertical-align: top;
+	width: 594px;
+	padding: 20px;
+	font-style: italic;
+	color: #bbb;
+	margin-right: 60px;
+	@media screen and (max-width: 979px) {
+		width: 100%;
+	}
+}
+
+.seacrh__btn{
+	@media screen and (max-width: 979px) {
+		display: none;
+	}
+}
+
 
 
 /* end error */

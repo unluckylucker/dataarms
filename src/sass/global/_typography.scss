@@ -47,6 +47,9 @@
 .h1.h1_margin{
 	margin-top: 90px;
 	margin-left: 0px;
+	@media screen and (max-width: 767px) {
+		margin-top: 37px;
+	}
 }
 
 .h2, h2{
