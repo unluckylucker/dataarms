@@ -163,7 +163,12 @@ $(".tab-content-slide__form").validate({
     inputGroup: "contactsName contactsPhone  contactsEmail",      
   },
   submitHandler: function(form) { 
-    alert('valid form');
+     $('.overlay').fadeIn(400, 
+      function(){ 
+        $('.modal') 
+          .css('display', 'block') 
+          .animate({opacity: 1, top: '50%'}, 200); 
+    });
     return false;
   }
 });
