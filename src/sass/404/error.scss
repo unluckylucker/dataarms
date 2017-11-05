@@ -62,6 +62,14 @@
 /* search */
 .search{
 	margin-top: 60px;
+	position: relative;
+}
+
+.search_big{
+	::-webkit-input-placeholder {color: #fff;}
+	::-moz-placeholder          {color: #fff;}/* Firefox 19+ */
+	:-moz-placeholder           {color: #fff;}/* Firefox 18- */
+	:-ms-input-placeholder      {color: #fff;}
 }
 
 .search__input{
@@ -79,6 +87,25 @@
 	}
 }
 
+.search__input.search__input_big{
+	border: 2px solid $secondary-color;
+	width: 100%;
+	color: #fff;
+	font-weight: 700;
+	margin-bottom: 70px;
+	padding-right: 70px;
+}
+.btn_search{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100px;
+}
+
+.icon-search.icon-search_blue{
+	fill: $secondary-color;
+	stroke: $secondary-color;
+}
 .seacrh__btn{
 	@media screen and (max-width: 979px) {
 		display: none;

@@ -1,0 +1,48 @@
+/* ==========================================================================
+	 pagination
+	 ===========================================================================*/
+
+.pagination{
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 30px;
+}
+.pagination__item{
+	color: $secondary-color;
+	list-style-type: none;
+	display: inline-block;
+	@include font-size(24px);
+	padding: 18px 25px;
+	margin-right: 20px;
+	margin-left: 20px;
+	@media screen and (max-width: 979px) {
+			@include font-size(18px);
+		}
+		@media screen and (max-width: 767px) {
+			@include font-size(14px);
+			padding: 15px 20px;
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+	}
+
+.pagination__item a{
+	color: #939393;
+	@include font-size(24px);
+	@media screen and (max-width: 979px) {
+		@include font-size(18px);
+	}
+	@media screen and (max-width: 767px) {
+		@include font-size(14px);
+	}
+	&:hover{
+		text-decoration: none;
+		color: $secondary-color;
+	}
+}
+
+.pagination__item.active{
+	border: 1px solid $secondary-color;
+}
+/* end pagination */
