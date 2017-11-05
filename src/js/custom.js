@@ -109,7 +109,12 @@ $("#header-form").validate({
     inputGroup: "headerName headerPhone  headerEmail",      
   },
   submitHandler: function(form) { 
-    alert('valid form');
+    $('.overlay').fadeIn(400, 
+      function(){ 
+        $('.modal') 
+          .css('display', 'block') 
+          .animate({opacity: 1, top: '50%'}, 200); 
+    });
     return false;
   }
 });
@@ -195,6 +200,16 @@ $('.tab-menu__button').click(function(){
   $(this).children().addClass('cssarrow');
 });
      
-
+//modal
+  /*close modal */
+  $('.modal__close, .overlay').click( function(){ // лoвим клик пo крестику или пoдлoжке
+    $('.modal')
+      .animate({opacity: 0, top: '45%'}, 200,  
+        function(){ 
+          $(this).css('display', 'none'); 
+          $('.overlay').fadeOut(400); 
+        }
+      );
+  });
 })(jQuery);
 
