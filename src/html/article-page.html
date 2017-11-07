@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('global/head.html')
+	<body>
+		@@include('global/header-sm.html')
+		<div class="wrapper">
+			<main>
+				<div class="container">
+					<p class="breadcrumbs"><a href="./" class="breadcrumbs__link">Главная</a> - <a href="article.html" class="breadcrumbs__link">Статьи</a> - <span>Статья</span></p>
+					<h1 class="h1 h1_margin">Бизнес-аналитика коммерческой  
+деятельности операторов ШПД</h1>
+					<!-- article-page -->
+					<section class="error">
+						@@include('article-page/article-page-content.html')
+					</section>
+					<!-- contacts -->
+					<section class="contacts">
+						<h2 class="h1 h1_margin">Контакты</h2>
+						@@include('global/contacts.html')
+					</section>
+				</div>
+			</main>
+		</div>
+		@@include('global/footer.html')
+		<!--modal-->	
+		@@include('global/modal.html')	
+		@@include('global/scripts.html')
+		@@include('pages/pages.html')
+	</body>
+</html>
