@@ -96,6 +96,11 @@ button[type="button"]{
 	background: transparent;
 	color: #000;
 	border-color: #000;
+	&:hover{
+		background: $primary-color;
+		color: $secondary-color;
+		border-color: $grey;
+	}
 }
 
 .btn_empty{

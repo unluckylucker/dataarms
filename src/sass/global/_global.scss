@@ -225,6 +225,22 @@ label[class="error"]{
 	display: block;
 }
 
+/* breadcrumbs */
+
+.breadcrumbs{
+	@include font-size(16px);
+	font-weight: 700;
+	color: $grey;
+	margin-top: 30px;
+}
+
+.breadcrumbs__link{
+	color: $grey;
+	&:hover{
+		color: $grey;
+	}
+}
+
 /* placeholder */
 // ::-webkit-input-placeholder {color:$grey;}
 // ::-moz-placeholder          {color:$grey;}/* Firefox 19+ */
