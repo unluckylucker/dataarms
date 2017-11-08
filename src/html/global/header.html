@@ -5,28 +5,28 @@
 		<div class="header-top-content">
 			<!-- header links-->
 			<a href="#" class="header-top-content__social" target="blank">
-				<svg class="icon icon-google icon-social">
+				<svg class="icon icon-social">
 					<use xlink:href="images/sprite/sprite.svg#google"></use>
 				</svg> 
 			</a>
 			<a href="#" class="header-top-content__social" target="blank">	
-				<svg class="icon icon-facebook icon-social">
+				<svg class="icon icon-social">
 					<use xlink:href="images/sprite/sprite.svg#facebook"></use>
 				</svg> 
 			</a>
 			<a href="#" class="header-top-content__social" target="blank">		
-				<svg class="icon icon-mail icon-social">
+				<svg class="icon icon-social">
 					<use xlink:href="images/sprite/sprite.svg#mail"></use>
 				</svg> 
 			</a>
-			<span class="link__location">
-				<svg class="icon icon-location icon-contacts">
+			<span class="link-location">
+				<svg class="icon icon-contacts">
 					<use xlink:href="images/sprite/sprite.svg#location"></use>
 				</svg>
 				<span>г. Одинцово, ул. Ново-спортивная, д. 4, корпус 2, офис 1</span>
 			</span>
-			<a href="tel:+88003334460" class="link__contact">
-				<svg class="icon icon-call icon-contacts">
+			<a href="tel:+88003334460" class="link-contact">
+				<svg class="icon icon-contacts">
 					<use xlink:href="images/sprite/sprite.svg#call"></use>
 				</svg>
 				 <span>8-800-333-44-60</span>
@@ -36,8 +36,8 @@
 	<div class="header-middle">
 		<div class="header-middle-content">
 			<!-- header logo -->
-			<a href="./"><img src="images/logo.svg" class="logo" alt="logo"></a>
-			<div class="header-middle-content__menu-btn"><span class="menu-icon"></span></div>
+			<a href="./" class="logo-link"><img src="images/logo.svg" class="logo" alt="logo"></a>
+			<div class="btn-menu"><i class="menu-icon"></i></div>
 			<!-- header search-->
 			<form class="form-search">
 				<input type="search" placeholder="Поиск по сайту..." class="form-search__input">
@@ -50,7 +50,7 @@
 			</form>
 			<!-- header menu-->
 			<nav class="header-middle-content-menu">
-				<button class="close-btn btn_empty" id="close-menu"><span class="close-icon"></span></button>
+				<button class="close-btn btn_empty" id="close-menu"><i class="close-icon"></i></button>
 				<ul>
 					<li class="header-middle-content-menu__item"><a href="#about" class="anchor-link">О нас</a></li>
 					<li class="header-middle-content-menu__item"><a href="#favor" class="anchor-link">Услуги</a></li>
@@ -62,36 +62,35 @@
 		</div>
 	</div>	
 	<!-- header bottom -->
-	<div class="header-bottom">
+	<div class="header-bottom clearfix">
 		<div class="header-bottom-content">
 			<!-- header main-->
-			<div class="header-bottom-content-main">
-				<h1 class="h1 header-title">Безопастность вашего бизнеса <br><span>в ваших руках</span></h1>
+				<h1 class="header-bottom-content__title">Безопастность вашего бизнеса <span>в ваших руках</span></h1>
 				<!-- header form-->
-				<form class="form" id="header-form">
-					<button class="close-btn close-btn_position btn_empty" id="close-form"><span class="close-icon close-icon_blue"></span></button>
-					<p class="form-title">Свяжитесь с нами</p>
+				<form class="form header-form">
+					<button class="close-btn close-btn_position btn_empty" id="close-form"><i class="close-icon close-icon_blue"></i></button>
+					<p class="form__title">Свяжитесь с нами</p>
 					<div class="form-input">
 						<input type="text" placeholder="Как вас зовут?" name="headerName" class="form-input__item">
-						<svg class="icon icon-form icon-user">
+						<svg class="icon icon-form">
 							<use xlink:href="images/sprite/sprite.svg#user"></use>
 						</svg>
 					</div>
 					<div class="form-input">
 						<input type="tel" placeholder="Контактный телефон*" name="headerPhone" id="phone" class="form-input__item">
-						<svg class="icon icon-form icon-call">
+						<svg class="icon icon-form">
 							<use xlink:href="images/sprite/sprite.svg#call"></use>
 						</svg>
 					</div>
 					<div class="form-input">
 						<input type="text" placeholder="E - mail" name="headerEmail" class="form-input__item">
-						<svg class="icon icon-form icon-mail">
+						<svg class="icon icon-form">
 							<use xlink:href="images/sprite/sprite.svg#mail"></use>
 						</svg>
 					</div>
 					<div class="form-textarea">
 						<textarea type="text" name="headerTextarea" class="form-textarea__item" placeholder="Какая у вас задача?"></textarea>
-						<svg class="icon icon-form icon-think">
+						<svg class="icon icon-form">
 							<use xlink:href="images/sprite/sprite.svg#think"></use>
 						</svg>
 					</div>
@@ -99,7 +98,6 @@
 					<button type="submit" class="btn btn_blue">Отправить заявку</button>
 				</form>
 				<button type="button" id="open-form" class="btn btn_blue">Отправить заявку</button>
-			</div>
 		</div>	
 	</div>
 </header>

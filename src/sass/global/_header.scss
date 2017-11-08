@@ -92,24 +92,12 @@
 	fill: #bababa;
 	vertical-align: middle;
 	margin-right: 15px;
-}
-
-.icon-google{
 	width: 21px;
-    height: 21px;
+    height: 21px
 }
 
-.icon-facebook{
-	width: 17px;
-    height: 18px;
-}
 
-.icon-mail{
-	width: 17px;
-    height: 18px;
-}
-
-.link__contact, .link__location{
+.link-contact, .link-location{
 	float: right;
 	font-family: $ff;
 	margin-left: 5%;
@@ -124,23 +112,19 @@
 			display: none;
 		}
 	}
+	&:hover{
+		text-decoration: none;
+	}
 }
 
 .icon-contacts{
 	stroke: $secondary-color;
 	fill: $secondary-color;
 	vertical-align: middle;
+	width: 19px;
+    height: 19px;
 }
 
-.icon-call{
-	width: 18px;
-	height: 18px;
-}
-
-.icon-location{
-	width: 20px;
-    height: 20px;
-}
 
 /* bottom header */
 .header-bottom{
@@ -199,7 +183,7 @@
 .close-btn{
 	cursor: pointer;
 	position: absolute;
-	right: 35px;
+	right: 23px;
 	top: 0px;
 	display: block;
     width: 25px;
@@ -222,8 +206,6 @@
 	position: absolute;
 	margin-top: 0;
 	margin-left: 0;
-	width: 25px;
-	height: 25px;
 }
 .close-icon:before {
 	content: '';
@@ -254,15 +236,15 @@
 	right: 90px;
 	top: 0px;
 	border-right: 2px solid #fff;
-	z-index: 2;
+	z-index: 90;
 	@media screen and (max-width: 1240px) {
 		right: 55px;
 	}
 	@media screen and (max-width: 890px) {
-		display: none;
+		//display: none;
 		background: $primary-color;
 		top: 0;
-		left: 0;
+		left: -230px;
 		margin-top: 0;
 		width: 230px;
 		border-right: none;
@@ -271,21 +253,24 @@
 		margin-top: 49px;
 		.header-middle-content-menu__item{
 			float: none;
-			padding: 15px 0;
+			padding: 0 0;
 			a{
 				@include font-size(14px);
+				width: 100%;
+				padding: 15px 0;
+				display: inline-block;
 			}
 		}
 	}
 	@media screen and (min-width: 891px) {
-		display: block !important;
+		left: auto !important;
 	}
 	.header-middle-content-menu__item{
 		margin-bottom: 0px;
 	}
 }
 /* header menu hamburger */
-.header-middle-content__menu-btn{
+.btn-menu{
 	cursor: pointer;
 	display: inline-block;
 	margin-left: 15px;
@@ -388,7 +373,7 @@
 }
 
 /* header-title */
-.header-title{
+.header-bottom-content__title{
 	margin-top: 208px;
 	float: left;
 	margin-left: 0px;
@@ -421,7 +406,7 @@
 }
 /* header form */
 
-#header-form{
+.header-form{
 	background: rgba(0,0,0,0.4);
 	float: right;
 	width: 510px;
@@ -453,16 +438,6 @@
 	height: 16px;
 }
 
-.icon-form.icon-call{
-	width: 16px;
-	height: 16px;
-}
-
-.icon-form.icon-mail{
-	width: 16px;
-	height: 16px;
-}
-
 #open-form{
 	position: absolute;
     transform: translateX(-50%);
@@ -476,7 +451,9 @@
 	}
 }
 
-
+.logo-link{
+	display: inline-block;
+}
 
 
 

@@ -28,44 +28,33 @@ $(function(){
 });
 
 //open menu
-$(".header-middle-content__menu-btn").click(function(){
-  $(".header-middle-content-menu").toggle( 
-        function() { 
-            $("#slide").hide("slide", { direction: "right" }, 1000); 
-        }, 
-        function() { 
-            $("#slide").show("slide", { direction: "right" }, 500); 
-        } 
-    );
+$(".btn-menu").click(function(){
+  $('body').css('overflow', 'hidden');
+  $(".header-middle-content-menu").animate({left: '0'}, 200);
+    
 
 });
 
 //open form
 $("#open-form").click(function(){
-  $('#header-form').slideToggle();
+  $('.header-form').slideToggle();
   // $('body').css('overflow', 'hidden');
   // $('#header-form').css('overflow', 'scroll;');
 });
 
 //close menu
 $("#close-menu").click(function(){
-  $(".header-middle-content-menu").toggle( 
-        function() { 
-            $("#slide").hide("slide", { direction: "right" }, 1000); 
-        }, 
-        function() { 
-            $("#slide").show("slide", { direction: "right" }, 500); 
-        } 
-    );
+  $('body').css('overflow', 'auto'); 
+  $(".header-middle-content-menu").animate({left: '-230px'}, 200);
 });
 
 //close from
 $("#close-form").click(function(){
-  $('#header-form').slideToggle();
+  $('.header-form').slideToggle();
 });
 
 //form valid
-$("#header-form").validate({
+$(".header-form").validate({
   rules:{
 
     headerName:{
@@ -111,7 +100,8 @@ $("#header-form").validate({
   submitHandler: function(form) { 
     $('.overlay').fadeIn(400, 
       function(){ 
-        $('.modal') 
+        $('body').css('overflow', 'hidden');
+        $('.modal')  
           .css('display', 'block') 
           .animate({opacity: 1, top: '50%'}, 200); 
     });
@@ -165,7 +155,8 @@ $(".tab-content-slide__form").validate({
   submitHandler: function(form) { 
      $('.overlay').fadeIn(400, 
       function(){ 
-        $('.modal') 
+        $('body').css('overflow', 'hidden');
+        $('.modal')  
           .css('display', 'block') 
           .animate({opacity: 1, top: '50%'}, 200); 
     });
@@ -220,6 +211,7 @@ $('.tab-menu__button').click(function(){
     $('.modal')
       .animate({opacity: 0, top: '45%'}, 200,  
         function(){ 
+          $('body').css('overflow', 'auto')
           $(this).css('display', 'none'); 
           $('.overlay').fadeOut(400); 
         }
