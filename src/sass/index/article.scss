@@ -14,6 +14,7 @@
 	background: #3b3b3b;
 	margin-bottom: 15px;
 	overflow: hidden;
+	position: relative;
 	-webkit-transition: all ease-out 0.5s;
 	-moz-transition: all ease-out 0.5s;
 	-o-transition: all ease-out 0.5s;
@@ -33,7 +34,7 @@
 			-o-transition: all ease-out 0.5s;
 			transition: all ease-out 0.5s;
 		}
-		.article-block__img:after{
+		.article-block-img:after{
 			opacity: 1;
 			-webkit-transition: all ease-out 0.5s;
 			-moz-transition: all ease-out 0.5s;
@@ -44,13 +45,19 @@
 			fill: #000;
 			stroke: #000;
 		}
-		color: #000;
+		.article-block-content{
+			background: #fff;
+			-webkit-transition: all ease-out 0.5s;
+			-moz-transition: all ease-out 0.5s;
+			-o-transition: all ease-out 0.5s;
+			transition: all ease-out 0.5s;
+			color: #000;
 		text-decoration: none;
-		background: #fff;
+		}	
 	}
 }
 
-.article-block__img{
+.article-block-img{
 	float: left;
 	width: 263px;
 	overflow: hidden;
@@ -66,7 +73,7 @@
 	}
 	img{
 		height: 100%;
-		max-width: 100%;
+		max-width: none;
 		width: auto;
 	}
 	&:after{
@@ -83,10 +90,13 @@
 
 .article-block-content{
 	padding: 15px;
-	margin-left: 263px;
-	@media screen and (max-width: 1200px) {
-		margin-left: 236px;
-	}
+    padding: 15px;
+    width: 54%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: #3b3b3b;
 	@media screen and (max-width: 979px) {
 		width: 50%;
 		margin-left: 0px;
@@ -122,6 +132,8 @@
 	@include font-size(16px);
 	border-bottom: 1px solid #5d5d5d;
 	padding-bottom: 10px;
+	display: block;
+	font-weight: 400;
 	@media screen and (max-width: 979px) {
 		@include font-size(14px);
 	}
@@ -142,18 +154,23 @@
 
 /* Article block wide */
 .article.article_wide{
-	.col-md-6, .col-sm-6{
-		width: 100%;
+	article{
 		&:nth-child(even){
-			.article-block__img{
+			.article-block-img{
 				float: right;
 			}
 			.article-block-content{
-				float: left;
+				left: 0;
 			}
 		}
 	}
-	.article-block__img{
+	.article-block{
+		height: 350px;
+		@media screen and (max-width: 767px) {
+			height: 226px;
+		}
+	}
+	.article-block-img{
 		width: 50%;
 		float: left;
 		margin-right: 0;
