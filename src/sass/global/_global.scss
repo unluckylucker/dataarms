@@ -6,6 +6,7 @@
 *:after {
 	@include box-sizing(border-box);
 }
+
 html{
 	// font-size: 62.5%;
 	font-size: 100%;
@@ -56,7 +57,6 @@ figure{
 /* CUSTOM STYLE FOR GRID */
 .container{
 	width: 100%;
-	padding: 0 50px;
 	@media screen and (max-width: 1240px) {
 		padding: 0 20px;
 	}
@@ -163,12 +163,13 @@ address{
 	}
 }
 
-.form-input{
+.form-group{
 	margin-top: 20px;
 	position: relative;
+	font-size: 0px;
 }
 
-.form-input__item{
+.form-group__input{
 	width: 100%;
 	background: #000;
 	border: 2px solid $grey;
@@ -176,14 +177,10 @@ address{
 	font-style: italic;
 	padding: 18px;
 	padding-left: 40px;
+	@include font-size($fz-base);
 }
 
-.form-textarea{
-	margin-top: 20px;
-	position: relative;
-}
-
-.form-textarea__item{
+.form-group__textarea{
 	width: 100%;
 	background: #000;
 	border: 2px solid $grey;
@@ -192,6 +189,7 @@ address{
 	padding: 18px;
 	padding-left: 40px;
 	height: 145px;
+	@include font-size($fz-base);
 }
 
 .form__title{

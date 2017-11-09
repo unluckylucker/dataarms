@@ -79,8 +79,9 @@
 	}
 }
 
-.header-top-content__social{
+.social{
 	line-height: 2.5;
+	font-size: 0px;
 	&:hover{
 		text-decoration: none;
 	}
@@ -93,7 +94,7 @@
 	vertical-align: middle;
 	margin-right: 15px;
 	width: 21px;
-    height: 21px
+    height: 21px;
 }
 
 
@@ -206,6 +207,7 @@
 	position: absolute;
 	margin-top: 0;
 	margin-left: 0;
+	font-size: 0px;
 }
 .close-icon:before {
 	content: '';
@@ -291,6 +293,7 @@
 	height: 3px;		
 	margin-top: 8px;
 	background-color: currentColor;	
+	font-size: 0px;
 }
 .menu-icon:before {
 	content: '';
@@ -318,6 +321,7 @@
 }
 
 .form-search__input{
+	border-radius: 0px;
 	background: transparent;
 	border: none;
 	width: 0px;

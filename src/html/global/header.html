@@ -4,20 +4,23 @@
 	<div class="header-top">
 		<div class="header-top-content">
 			<!-- header links-->
-			<a href="#" class="header-top-content__social" target="blank">
+			<a href="#" class="social" target="blank">
 				<svg class="icon icon-social">
 					<use xlink:href="images/sprite/sprite.svg#google"></use>
 				</svg> 
+				google
 			</a>
-			<a href="#" class="header-top-content__social" target="blank">	
+			<a href="#" class="social" target="blank">	
 				<svg class="icon icon-social">
 					<use xlink:href="images/sprite/sprite.svg#facebook"></use>
 				</svg> 
+				facebook
 			</a>
-			<a href="#" class="header-top-content__social" target="blank">		
+			<a href="#" class="social" target="blank">		
 				<svg class="icon icon-social">
 					<use xlink:href="images/sprite/sprite.svg#mail"></use>
 				</svg> 
+				mail
 			</a>
 			<span class="link-location">
 				<svg class="icon icon-contacts">
@@ -37,7 +40,7 @@
 		<div class="header-middle-content">
 			<!-- header logo -->
 			<a href="./" class="logo-link"><img src="images/logo.svg" class="logo" alt="logo"></a>
-			<div class="btn-menu"><i class="menu-icon"></i></div>
+			<div class="btn-menu"><i class="menu-icon">menu</i></div>
 			<!-- header search-->
 			<form class="form-search">
 				<input type="search" placeholder="Поиск по сайту..." class="form-search__input">
@@ -46,11 +49,12 @@
 					<svg class="icon icon-search">
 						<use xlink:href="images/sprite/sprite.svg#search"></use>
 					</svg> 
+					search
 				</button>
 			</form>
 			<!-- header menu-->
 			<nav class="header-middle-content-menu">
-				<button class="close-btn btn_empty" id="close-menu"><i class="close-icon"></i></button>
+				<button class="close-btn btn_empty" id="close-menu"><i class="close-icon">close</i></button>
 				<ul>
 					<li class="header-middle-content-menu__item"><a href="#about" class="anchor-link">О нас</a></li>
 					<li class="header-middle-content-menu__item"><a href="#favor" class="anchor-link">Услуги</a></li>
@@ -68,31 +72,35 @@
 				<h1 class="header-bottom-content__title">Безопастность вашего бизнеса <span>в ваших руках</span></h1>
 				<!-- header form-->
 				<form class="form header-form">
-					<button class="close-btn close-btn_position btn_empty" id="close-form"><i class="close-icon close-icon_blue"></i></button>
+					<button class="close-btn close-btn_position btn_empty" id="close-form"><i class="close-icon close-icon_blue">close</i></button>
 					<p class="form__title">Свяжитесь с нами</p>
-					<div class="form-input">
-						<input type="text" placeholder="Как вас зовут?" name="headerName" class="form-input__item">
+					<div class="form-group">
+						<input type="text" placeholder="Как вас зовут?" name="headerName" class="form-group__input">
 						<svg class="icon icon-form">
 							<use xlink:href="images/sprite/sprite.svg#user"></use>
 						</svg>
+						user
 					</div>
-					<div class="form-input">
-						<input type="tel" placeholder="Контактный телефон*" name="headerPhone" id="phone" class="form-input__item">
+					<div class="form-group">
+						<input type="tel" placeholder="Контактный телефон*" name="headerPhone" id="phone" class="form-group__input">
 						<svg class="icon icon-form">
 							<use xlink:href="images/sprite/sprite.svg#call"></use>
 						</svg>
+						call
 					</div>
-					<div class="form-input">
-						<input type="text" placeholder="E - mail" name="headerEmail" class="form-input__item">
+					<div class="form-group">
+						<input type="text" placeholder="E - mail" name="headerEmail" class="form-group__input">
 						<svg class="icon icon-form">
 							<use xlink:href="images/sprite/sprite.svg#mail"></use>
 						</svg>
+						mail
 					</div>
-					<div class="form-textarea">
-						<textarea type="text" name="headerTextarea" class="form-textarea__item" placeholder="Какая у вас задача?"></textarea>
+					<div class="form-group">
+						<textarea type="text" name="headerTextarea" class="form-group__textarea" placeholder="Какая у вас задача?"></textarea>
 						<svg class="icon icon-form">
 							<use xlink:href="images/sprite/sprite.svg#think"></use>
 						</svg>
+						think
 					</div>
 					<span class="error_label"></span>
 					<button type="submit" class="btn btn_blue">Отправить заявку</button>

@@ -16,7 +16,7 @@
 	span{
 		@include font-size(51px);
 	}
-	.h1-bg{
+	.title-shadow{
 		position: absolute;
 		color: #232323;
 		@include font-size(200px);
@@ -135,6 +135,7 @@ a {
 		text-decoration: underline;
 	}
 }
+
 /* text */
 p{
 	line-height: 1.5;
@@ -164,3 +165,11 @@ p{
 	line-height: 1.2;
 }
 
+.about-features-block-content .h4-title{
+	text-transform: uppercase;
+	margin: 0;
+	line-height: 1.2;
+	color: #fff;
+	@include font-size(18px);
+	font-weight: 700;
+}

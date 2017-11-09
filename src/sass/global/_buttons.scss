@@ -106,9 +106,14 @@ button[type="button"]{
 .btn_empty{
 	background: transparent;
 	border: none;
+	font-size: 0px;
 }
 
-.wrapper-btn{
+.btn.right{
+	line-height: 60px;
+}
+
+.favor-price-btn{
 	position: absolute;
 	background: $primary-color;
 	width: 40%;

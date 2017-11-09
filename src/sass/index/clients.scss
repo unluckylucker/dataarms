@@ -12,12 +12,48 @@
 	}
 }
 
-.clients-title{
+.clients__title{
 	position: absolute;
 	z-index: 2;
 	top: 0;
 	background: $primary-color;
 	padding-right: 20px;
+	font-family: $ff-title;
+	@include font-size($fz-h1);
+	color: $title-color;
+	font-weight: $title-fw;
+	text-transform: uppercase;
+	margin-left: 30px;
+	margin-top: 150px;
+	@media screen and (max-width: 979px) {
+		@include font-size(48px);
+		margin-top: 110px;
+	}
+	@media screen and (max-width: 767px) {
+		@include font-size(30px);
+		margin-left: 15px;
+		margin-top: 83px;
+		margin-bottom: 35px;
+	}
+	span{
+		@include font-size(51px);
+	}
+	.title-shadow{
+		position: absolute;
+		color: #232323;
+		@include font-size(200px);
+		z-index: -1;
+		top: -110px;
+		left: -35px;
+		@media screen and (max-width: 979px) {
+			@include font-size(180px);
+		}
+		@media screen and (max-width: 767px) {
+			@include font-size(110px);
+			top: -63px;
+			left: -20px;
+		}
+	}
 }
 /* slider */
 .slider{

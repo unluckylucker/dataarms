@@ -94,19 +94,18 @@
 	}
 	@media screen and (max-width: 767px) {
 		padding: 10px;
+		max-height: 117px;
+	}
+	p{
+		color: $grey;
+		@include font-size(16px);
+		line-height: 1.5;
+		margin-top: 10px;
+		@media screen and (max-width: 767px) {
+			@include font-size(12px);
+		}
 	}
 }
 
-
-
-.about-features-block-content__text{
-	color: $grey;
-	@include font-size(16px);
-	line-height: 1.5;
-	margin-top: 10px;
-	@media screen and (max-width: 767px) {
-		@include font-size(12px);
-	}
-}
 /* end about */
 
