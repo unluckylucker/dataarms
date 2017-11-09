@@ -2,5 +2,48 @@
 	 ARTICLE PAGE
 	 ===========================================================================*/
 
+.article-page-content__text{
+	color: #b3b3b3;
+}
 
+.article-page-content__title{
+	color: $secondary-color;
+	font-family: Ubuntu;
+	@include font-size(24px);
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.article-page-content__prev, .article-page-content__next{
+	text-decoration: underline;
+	color: #b6b6b6;
+	font-family: Ubuntu;
+	font-weight: 700;
+	@media screen and (max-width: 767px) {
+		@include font-size(12px);
+	}
+	&:hover{
+		color: $secondary-color;
+		.icon-arrow{
+			fill: $secondary-color;
+			stroke: $secondary-color;
+		}
+	}
+}
+
+.article-page-content__prev{
+	float: left;
+}
+
+.article-page-content__next{
+	float: right;
+}
+
+.icon-arrow{
+	vertical-align: middle;
+	width: 29px;
+	height: 19px;
+	fill: #b6b6b6;
+	stroke: #b6b6b6;
+}
 /* end article page */
