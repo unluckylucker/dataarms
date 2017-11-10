@@ -15,28 +15,6 @@ $(".form-search__btn").click(function(){
 });
 
 
-// $(function(){
-//   $(document).click(function(event) {
-//     if ($(event.target).closest(".form-search").length) return;
-//       $('.form-search__input').removeClass('active');
-//       if ($(window).width() >= '890'){
-//         $('.header-middle-content-menu').delay(300).animate({opacity: 1});
-//       }
-//       $('.form-search__btn').removeClass('clicked');
-//       event.stopPropagation();
-//   });
-// });
-
-// //test//
-// var clickEvent = ((document.ontouchstart!==null)?'click':'touchstart');
-
-//   $(document).on(clickEvent, function(e) {
-//     if (!$(e.target).closest(searchForm).length) {
-//       searchClose();
-//     }
-//     e.stopPropagation();
-//   });
-// //test//
 
 var clickEvent = ((document.ontouchstart!==null)?'click':'touchstart');
 
@@ -102,6 +80,8 @@ $(".header-form").validate({
       required: true,
       email: true,
     },
+
+   
   },
 
   messages:{
@@ -121,6 +101,7 @@ $(".header-form").validate({
       required: "*Выделенные поля заполнены некорректно",
       email: "*Выделенные поля заполнены некорректно",
     },
+
   },
   
   errorLabelContainer: ".error_label",
@@ -139,7 +120,7 @@ $(".header-form").validate({
   }
 });
 
-$(".form_tabs").validate({
+$(".form_feedback").validate({
   rules:{
 
     contactsName:{

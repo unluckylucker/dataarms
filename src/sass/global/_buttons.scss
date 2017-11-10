@@ -103,6 +103,26 @@ button[type="button"]{
 	}
 }
 
+.anchor{
+	line-height: 60px;
+	&:hover{
+		text-decoration: none;
+		color: $secondary-color;
+	}
+}
+.security-content{
+	@media screen and (max-width: 767px) {
+		.anchor{
+			line-height: 48px;
+		}
+	}
+	.anchor{
+		&:hover{
+			text-decoration: none;
+			color: #000;
+		}
+	}
+}
 .btn_empty{
 	background: transparent;
 	border: none;
