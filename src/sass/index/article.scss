@@ -154,7 +154,7 @@
 
 /* Article block wide */
 .article.article_wide{
-	article{
+	.article-block{
 		&:nth-child(even){
 			.article-block-img{
 				float: right;
