@@ -1,7 +1,13 @@
 /* ==========================================================================
 	 Audit
 	 ===========================================================================*/
-
+.audit{
+	.h1{
+		@media screen and (max-width: 767px) {
+			@include font-size(24px);
+		}
+	}
+}
 .audit__text{
 	margin-bottom: 40px;
 	@media screen and (max-width: 979px) {
@@ -10,12 +16,6 @@
 	}
 	@media screen and (max-width: 767px) {
 		@include font-size(14px);
-	}
-}
-
-.h1.h1_fz{
-	@media screen and (max-width: 767px) {
-		@include font-size(24px);
 	}
 }
 
