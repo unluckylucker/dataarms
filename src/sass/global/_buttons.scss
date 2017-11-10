@@ -106,7 +106,7 @@ button[type="button"]{
 .btn_empty{
 	background: transparent;
 	border: none;
-	font-size: 0px;
+	font-size: 0px !important;
 }
 
 .btn.right{

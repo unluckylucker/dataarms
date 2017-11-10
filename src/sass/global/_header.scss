@@ -376,6 +376,17 @@
 	fill: #fff;
 }
 
+.header-form{
+	.label{
+		@include font-size(12px);
+	}
+	.form-agreement{
+		margin-top: 10px;
+	}
+	.btn{
+		margin-top: 10px;
+	}
+}
 /* header-title */
 .header-bottom-content__title{
 	margin-top: 208px;

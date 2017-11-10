@@ -1,9 +1,15 @@
 /* ==========================================================================
 	 ARTICLE PAGE
 	 ===========================================================================*/
+.article-page{
+
+}
 
 .article-page-content__text{
 	color: #b3b3b3;
+	@media screen and (max-width: 767px) {
+		@include font-size(14px);
+	}
 }
 
 .article-page-content__title{
@@ -12,6 +18,9 @@
 	@include font-size(24px);
 	font-weight: 700;
 	text-transform: uppercase;
+	@media screen and (max-width: 767px) {
+		@include font-size(18px);
+	}
 }
 
 .article-page-content__prev, .article-page-content__next{
@@ -19,6 +28,7 @@
 	color: #b6b6b6;
 	font-family: Ubuntu;
 	font-weight: 700;
+	margin-top: 60px;
 	@media screen and (max-width: 767px) {
 		@include font-size(12px);
 	}
@@ -33,10 +43,31 @@
 
 .article-page-content__prev{
 	float: left;
+	.icon-arrow{
+		transform: rotate(180deg);
+	}
+	@media screen and (max-width: 500px) {
+		span{
+			max-width: 57px;
+			display: block;
+			float: right;
+			margin-left: 5px;
+			text-decoration: underline;
+		}
+	}
 }
 
 .article-page-content__next{
 	float: right;
+	@media screen and (max-width: 500px) {
+		span{
+			max-width: 57px;
+			display: block;
+			float: left;
+			margin-right: 5px;
+			text-decoration: underline;
+		}
+	}
 }
 
 .icon-arrow{

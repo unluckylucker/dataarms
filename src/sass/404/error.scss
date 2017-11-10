@@ -34,7 +34,10 @@
 .error__text{
 	@include font-size(24px);
 	color: #bbb;
-	position: absolute;
+	width: 1400px;
+	@media screen and (max-width: 1600px) {
+		width: 100%;
+	}
 	@media screen and (max-width: 767px) {
 		@include font-size(14px);
 	}
@@ -46,7 +49,7 @@
 	color: $secondary-color;
 	font-weight: 700;
 	display: block;
-    margin-top: 190px;
+    margin-top: 80px;
 	&:hover{
 		text-decoration: none;
 		color: $secondary-color;
@@ -55,7 +58,7 @@
 		@include font-size(14px);
 	}
 	@media screen and (max-width: 767px) {
-		margin-top: 100px;
+		margin-top: 0px;
 	}
 }
 

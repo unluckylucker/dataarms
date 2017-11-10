@@ -139,7 +139,7 @@ $(".header-form").validate({
   }
 });
 
-$(".tab-content-slide__form").validate({
+$(".form_tabs").validate({
   rules:{
 
     contactsName:{
