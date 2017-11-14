@@ -260,6 +260,12 @@ address{
 		display: inline-block;
 		vertical-align: middle;
 	}
+	a{
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
+		}
+	}
 }
 /* error form */
 input[class*="error"]{
