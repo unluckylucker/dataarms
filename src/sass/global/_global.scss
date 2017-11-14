@@ -162,7 +162,7 @@ address{
 	text-align: center;
 	padding: 0 44px 44px 44px;
 	
-	button{
+	.btn{
 		margin-top: 44px;
 	}
 }
@@ -209,10 +209,17 @@ address{
 
 /* checkbox */
 .checkbox {
-	display: none;
+	display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    cursor: pointer;
 }
 
-.checkbox-custom {
+.checkbox__custom {
     position: relative;   
     width: 30px;            
     height: 30px;            
@@ -220,15 +227,14 @@ address{
     border-radius: 0px;
     margin-right: 15px;
     margin-bottom: 5px;
-}
-
-.checkbox-custom,
-.label {
-	display: inline-block;
+    display: inline-block;
 	vertical-align: middle;
+	cursor: pointer;
 }
 
-.checkbox:checked + .checkbox-custom::before {
+
+
+.checkbox:checked + .checkbox__custom::before {
 	content: '';
     display: block;          
     color: $secondary-color;
@@ -248,6 +254,11 @@ address{
 .form-agreement{
 	float: left;
 	margin-top: 40px;
+	position: relative;
+	p {
+		display: inline-block;
+		vertical-align: middle;
+	}
 }
 /* error form */
 input[class*="error"]{
@@ -259,6 +270,7 @@ label[class="error"]{
 	font-weight: 400;
 	@include font-size(16px);
 	color: $error;
+	display: block;
 }
 
 .error_label{
@@ -278,32 +290,25 @@ label[class="error"]{
 	margin-top: 30px;
 	list-style: none;
 	padding-left: 0;
-	li{
-		float: left;
-		margin-right: 15px;
-		position: relative;
-		span{
-			line-height: 1.4;
+	.active{
+			color: $grey;
+		&:hover{
+			color: $grey;		
 		}
+	}
+	li{
+		display: inline-block;
+		margin-right: 10px;
+		position: relative;
 		&:after{
 			position: absolute;
 			content: '-';
 			color: $grey;
 			right: -10px;
+			top: 3px;
 		}
 		&:last-child:after{
 			display: none;
-		}
-	}
-}
-
-.breadcrumbs__link{
-	a{
-		color: $grey;
-	}
-	&:hover{
-		a{
-			color: $grey;
 		}
 	}
 }

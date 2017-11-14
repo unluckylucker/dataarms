@@ -1,11 +1,11 @@
 /* ==========================================================================
-	 Favor
+	 front-services
 	 ===========================================================================*/
-/* favor block */
-.favor{
+/* front-services block */
+.front-services{
 	overflow: hidden;
 }
-.favor-block{
+.front-services-block{
 	height: 339px;
 	padding: 20px 20px;
 	margin-top: 20px;
@@ -23,7 +23,7 @@
 	}
 }
 
-.favor-block__text{
+.front-services-block__text{
 	@media screen and (max-width: 979px) {
 		@include font-size(16px);
 	}
@@ -32,13 +32,13 @@
 		line-height: 2;
 	}
 }
-/* favor block bg */
-.favor-block_big{
+/* front-services block bg */
+.front-services-block_big{
 	background: url(../images/code.png);
 	background-size: cover;
 }
-/* favor block sm */
-.favor-block_sm{
+/* front-services block sm */
+.front-services-block_sm{
 	background: url(../images/work.png);
 	background-size: cover;
 	p{
@@ -46,8 +46,8 @@
 	}
 }
 
-/* favor block price */
-.favor-price{
+/* front-services block price */
+.front-services-price{
 	border: 10px solid $grey;
 	padding: 20px;
 	position: relative;
@@ -72,7 +72,7 @@
 	}
 }
 
-.favor-block__title{
+.front-services-block__title{
 	@include font-size(24px);
 	font-weight: 700;
 	text-transform: uppercase;
@@ -92,5 +92,5 @@
 
 
 
-/* end favor */
+/* end front-services */
 

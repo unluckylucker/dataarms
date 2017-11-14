@@ -51,6 +51,14 @@ $("#open-form").click(function(){
 });
 
 //close menu
+$(document).on(clickEvent, function(e) {
+  if (!$(e.target).closest('.btn-menu').length) {
+    $(".header-middle-content-menu").animate({left: '-230px'}, 200);
+    $('body').css('overflow', 'auto'); 
+  }
+  e.stopPropagation();
+});
+
 $("#close-menu").click(function(){
   $('body').css('overflow', 'auto'); 
   $(".header-middle-content-menu").animate({left: '-230px'}, 200);
@@ -81,7 +89,9 @@ $(".header-form").validate({
       email: true,
     },
 
-   
+    checkbox:{
+      required: true,
+    }
   },
 
   messages:{
@@ -101,6 +111,10 @@ $(".header-form").validate({
       required: "*Выделенные поля заполнены некорректно",
       email: "*Выделенные поля заполнены некорректно",
     },
+
+    checkbox:{
+      required: "Для отправки  заявки, необходимо дать согласие на обработку персональных данных",
+    }
 
   },
   
@@ -138,6 +152,10 @@ $(".form_feedback").validate({
       required: true,
       email: true,
     },
+
+    checkbox:{
+      required: true,
+    }
   },
 
   messages:{
@@ -157,6 +175,10 @@ $(".form_feedback").validate({
       required: "*Выделенные поля заполнены некорректно",
       email: "*Выделенные поля заполнены некорректно",
     },
+
+    checkbox:{
+      required: "Для отправки  заявки, необходимо дать согласие на обработку персональных данных",
+    }
   },
   
   errorLabelContainer: ".error_label-contacts",

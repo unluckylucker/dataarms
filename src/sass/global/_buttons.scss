@@ -131,9 +131,13 @@ button[type="button"]{
 
 .btn.right{
 	line-height: 60px;
+	&:hover{
+		text-decoration: none;
+		color: $secondary-color;
+	}
 }
 
-.favor-price-btn{
+.front-services-price-btn{
 	position: absolute;
 	background: $primary-color;
 	width: 40%;

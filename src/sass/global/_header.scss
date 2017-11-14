@@ -118,6 +118,14 @@
 	}
 }
 
+.header-top{
+	@media screen and (max-width: 767px) {
+		.link-location{
+			display: none;
+		}
+	}
+}
+
 .icon-contacts{
 	stroke: $secondary-color;
 	fill: $secondary-color;
@@ -184,19 +192,20 @@
 .close-btn{
 	cursor: pointer;
 	position: absolute;
-	right: 23px;
+	right: 0px;
 	top: 0px;
 	display: block;
     width: 25px;
     height: 25px;
-    padding: 5px;
+    padding: 20px;
 	@media screen and (min-width: 891px) {
 		display: none;
 	}
 }
 /* close form */
 .close-btn.close-btn_position{
-	right: 34px;
+	right: 10px;
+	top: 10px;
 	@media screen and (min-width: 768px) {
 		display: none;
 	}
@@ -208,11 +217,17 @@
 	margin-top: 0;
 	margin-left: 0;
 	font-size: 0px;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	height: 25px;
+    width: 25px;
 }
 .close-icon:before {
 	content: '';
 	position: absolute;
 	top: 10px;
+	left: 0px;
 	width: 25px;
 	height: 1px;
 	background-color: currentColor;
@@ -223,6 +238,7 @@
 	content: '';
 	position: absolute;
 	top: 10px;
+	left: 0px;
 	width: 25px;
 	height: 1px;
 	background-color: currentColor;
@@ -238,7 +254,7 @@
 	right: 90px;
 	top: 0px;
 	border-right: 2px solid #fff;
-	z-index: 90;
+	z-index: 2;
 	@media screen and (max-width: 1240px) {
 		right: 55px;
 	}
@@ -377,8 +393,18 @@
 }
 
 .header-form{
-	.label{
+	.form-agreement p{
 		@include font-size(12px);
+		max-width: 80%;
+		text-align: left;
+		a{
+			@include font-size(12px);
+			font-weight: 400;
+			text-decoration: underline;
+			&:hover{
+				text-decoration: none;
+			}
+		}
 	}
 	.form-agreement{
 		margin-top: 10px;

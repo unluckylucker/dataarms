@@ -34,7 +34,7 @@
 						</div>
 					</div>	
 					<div class="form-group form-group_height">
-						<textarea type="text" name="contactsTextarea" class="form-group__textarea" placeholder="Какая у вас задача?"></textarea>
+						<textarea name="contactsTextarea" class="form-group__textarea" placeholder="Какая у вас задача?"></textarea>
 						<svg class="icon icon-form">
 							<use xlink:href="images/sprite/sprite.svg#think"></use>
 						</svg>
@@ -44,11 +44,13 @@
 					<div class="clearfix">
 						<button type="submit" class="btn btn_blue">Отправить заявку</button>
 					</div>
-					<label class="form-agreement">
-						<input class="checkbox" type="checkbox" name="checkbox">
-						<span class="checkbox-custom"></span>
-						<span class="label">Я даю согласие, на обработку моих персональных данных</span>
-					</label>
+					<div class="form-agreement">
+						<label>
+							<input class="checkbox" type="checkbox" name="checkbox" value="1">
+							<span class="checkbox__custom"></span>
+						</label>
+						<p>Принимаю условия <a href="#">«Соглашения на обработку персональных данных»</a> и даю согласие на обработку моих персональных данных</p>
+					</div>
 				</form>
 			</div>
 			<div class="tab-content-slide tab-content-slide2 clearfix">
