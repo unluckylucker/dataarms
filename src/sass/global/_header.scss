@@ -417,6 +417,14 @@
 	.btn{
 		margin-top: 10px;
 	}
+	@media screen and (max-width: 1040px) and (min-width: 768px){
+		.form__title{
+			padding: 20px 0;
+		}
+		.form-group__textarea{
+			height: 65px;
+		}
+	}
 }
 /* header-title */
 .header-bottom-content__title{
