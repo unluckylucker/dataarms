@@ -3,18 +3,24 @@
 	@@include('global/head.html')
 	<body>
 		@@include('global/header-sm.html')
+		<div class="container">
+			<!-- breadcrumbs -->
+			<ol class="breadcrumbs clearfix">
+				<li>
+					<a class="active" href="/">Главная</a>
+				</li>
+				<li>Статьи</li>
+			</ol>
+			<!-- h1 -->
+			<div class="h1-wrapper">
+				<h1 class="h1">Статьи</h1>
+			</div>
+		</div>
 		<div class="wrapper">
 			<main>
-				<div class="container">
-					<ol class="breadcrumbs clearfix">
-						<li>
-							<a class="active" href="/">Главная</a>
-						</li>
-						<li>Статьи</li>
-					</ol>
+				<div class="container">		
 					<!-- article -->
 					<section class="article clearfix article_wide">
-						<h1 class="h1">Статьи</h1>
 							@@include('article/article-block1.html')
 							@@include('article/article-block2.html')
 							@@include('article/article-block1.html')

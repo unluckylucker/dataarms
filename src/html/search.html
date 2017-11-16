@@ -3,16 +3,22 @@
 	@@include('global/head.html')
 	<body>
 		@@include('global/header-sm.html')
+		<div class="container">
+			<!-- breadcrumbs -->
+			<ol class="breadcrumbs clearfix">
+				<li>
+					<a class="active" href="/">Главная</a>
+				</li>
+				<li>Результаты поиска</li>
+			</ol>
+			<!-- h1 -->
+			<div class="h1-wrapper">
+				<h1 class="h1">Результаты поиска</h1>
+			</div>
+		</div>
 		<div class="wrapper">
 			<main>
 				<div class="container">
-					<ol class="breadcrumbs clearfix">
-						<li>
-							<a class="active" href="/">Главная</a>
-						</li>
-						<li>Результаты поиска</li>
-					</ol>
-					<div class="search__title"><h1 class="h1">Результаты поиска</h1></div>
 					<form action="#" class="search search_big">
 						<input type="search" class="search__input search__input_big" placeholder="БЕЗОПАСНОСТЬ">
 						<button class="btn btn_empty btn_search">

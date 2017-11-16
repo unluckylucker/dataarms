@@ -91,6 +91,7 @@ $(".header-form").validate({
 
     checkbox:{
       required: true,
+      minlength: 1,
     }
   },
 
@@ -153,7 +154,7 @@ $(".form_feedback").validate({
       email: true,
     },
 
-    checkbox:{
+    checkbox2:{
       required: true,
     }
   },
@@ -176,7 +177,7 @@ $(".form_feedback").validate({
       email: "*Выделенные поля заполнены некорректно",
     },
 
-    checkbox:{
+    checkbox2:{
       required: "Для отправки  заявки, необходимо дать согласие на обработку персональных данных",
     }
   },
