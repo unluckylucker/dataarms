@@ -200,8 +200,8 @@ $(".form_feedback").validate({
 
 //mask for phone
 jQuery(function($){
- $("#phone").mask('(000) 000-0000');
- $("#phone2").mask('(000) 000-0000');
+ $("#phone").mask('+7(000) 000-00-00');
+ $("#phone2").mask('+7(000) 000-00-00');
 });
 
 //anchor
