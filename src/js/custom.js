@@ -121,7 +121,7 @@ $(".header-form").validate({
   
   errorLabelContainer: ".error_label",
   groups: {
-    inputGroup: "headerName headerPhone  headerEmail",      
+    inputGroup: "headerName headerPhone headerEmail",      
   },
   submitHandler: function(form) { 
     $('.overlay').fadeIn(400, 
@@ -184,7 +184,7 @@ $(".form_feedback").validate({
   
   errorLabelContainer: ".error_label-contacts",
   groups: {
-    inputGroup: "contactsName contactsPhone  contactsEmail",      
+    inputGroup: "contactsName contactsPhone contactsEmail",      
   },
   submitHandler: function(form) { 
      $('.overlay').fadeIn(400, 
@@ -200,8 +200,8 @@ $(".form_feedback").validate({
 
 //mask for phone
 jQuery(function($){
- $("#phone").mask("+7(999) 999-9999");
- $("#phone2").mask("+7(999) 999-9999");
+ $("#phone").mask('(000) 000-0000');
+ $("#phone2").mask('(000) 000-0000');
 });
 
 //anchor
