@@ -89,18 +89,22 @@
 
 /* icons */
 .icon-social{
-	stroke: #bababa;
-	fill: #bababa;
+	stroke: #fff;
+	fill: #fff;
 	vertical-align: middle;
 	margin-right: 15px;
 	width: 21px;
     height: 21px;
 }
 
-.icon-social.icon-social_size{
-	width: 25px;
-    height: 25px;
+.header .icon-social {
+    fill: #bababa;
+    stroke: #bababa;
 }
+// .icon-social.icon-social_size{
+// 	width: 25px;
+//     height: 25px;
+// }
 
 
 .link-contact, .link-location{
