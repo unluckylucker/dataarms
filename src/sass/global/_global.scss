@@ -291,7 +291,7 @@ label[class="error"]{
 /* breadcrumbs */
 
 .breadcrumbs{
-	@include font-size(16px);
+	@include font-size(18px);
 	font-weight: 700;
 	color: $grey;
 	margin-top: 30px;
@@ -307,15 +307,20 @@ label[class="error"]{
 		display: inline-block;
 		margin-right: 10px;
 		position: relative;
+		font-family: Ubuntu;
+		@include font-size(18px);
 		&:after{
 			position: absolute;
 			content: '-';
 			color: $grey;
 			right: -10px;
-			top: 3px;
+			top: 1px;
 		}
 		&:last-child:after{
 			display: none;
+		}
+		a{
+			@include font-size(18px);
 		}
 	}
 }
