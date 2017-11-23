@@ -271,13 +271,19 @@
 		//display: none;
 		background: $primary-color;
 		top: 0;
-		left: -230px;
+		left: 0;
+		transform: translateX(-100%);
+		transition: all .3s ease;
 		margin-top: 0;
 		width: 230px;
 		border-right: none;
 		height: 100%;
 		position: fixed;
 		margin-top: 49px;
+		&.open{
+			transform: translateX(0%);
+			transition: all .3s ease;
+		}
 		.header-middle-content-menu__item{
 			float: none;
 			padding: 0 0;

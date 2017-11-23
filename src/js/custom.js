@@ -38,9 +38,14 @@ $(function(){
 //open menu
 $(".btn-menu").click(function(){
   $('body').css('overflow', 'hidden');
-  $(".header-middle-content-menu").animate({left: '0'}, 200);
-    
+  $(".header-middle-content-menu").addClass('open');
+  // $(".header-middle-content-menu").animate({left: '0'}, 200);
+});
 
+//close menu
+$("#close-menu").click(function(){
+  $('body').css('overflow', ''); 
+  $(".header-middle-content-menu").removeClass('open');
 });
 
 //open form
@@ -53,19 +58,13 @@ $("#open-form").click(function(){
 //close menu
 
 $(document).on(clickEvent, function(e) {
-  if (!$(e.target).closest('.btn-menu').length) {
-   	$(".header-middle-content-menu").setTimeout(animate({left: '-230px'}, 200), 1000);
-    $('body').css('overflow', 'auto'); 
+  if (!$(e.target).closest('.header-middle-content-menu').length) {
+   	$('body').css('overflow', ''); 
+    $(".header-middle-content-menu").removeClass('open');
   }
   e.stopPropagation();
 });
 
-
-
-$("#close-menu").click(function(){
-  $('body').css('overflow', 'auto'); 
-  $(".header-middle-content-menu").animate({left: '-230px'}, 200);
-});
 
 //close from
 $("#close-form").click(function(){
