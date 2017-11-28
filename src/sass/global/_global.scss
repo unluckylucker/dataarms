@@ -204,7 +204,7 @@ address{
 	text-transform: uppercase;
 	font-weight: 700;
 	font-family: $ff-secondary;
-	padding: 35px 0;
+	padding: 25px 0;
 	margin: 0 -44px 0 -44px;
 }
 
@@ -270,14 +270,16 @@ address{
 /* error form */
 input[class*="error"]{
 	border: 2px solid $error !important;
+
 } 
 
 label[class="error"]{
 	font-style: italic;
 	font-weight: 400;
-	@include font-size(16px);
 	color: $error;
 	display: block;
+	font-style: normal;
+	@include font-size(12px);
 }
 
 .error_label{
@@ -286,6 +288,7 @@ label[class="error"]{
 
 .error_label-contacts{
 	display: block;
+	padding-top: 20px;
 }
 
 /* breadcrumbs */

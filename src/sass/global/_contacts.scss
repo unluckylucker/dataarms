@@ -122,7 +122,9 @@
 .tab-content-slide-contacts, .tab-content-slide-map{
 	width: 50%;
 	float: left;
-	height: 371px;
+	height: 400px;
+	position: relative;
+    z-index: 1;
 }
 
 .link-contact.link-contact_left, .link-location.link-location_left{
@@ -135,7 +137,7 @@
 		display: none;
 	}
 	a, span{
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 	}
 }
 
