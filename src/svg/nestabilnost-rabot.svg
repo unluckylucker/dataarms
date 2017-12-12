@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g id="nestabilnost">
+	<path id="XMLID_51_" class="st0" d="M76.4,91.5H22.3c-2.1,0-3.8-1.7-3.8-3.8v0c0-2.1,1.7-3.8,3.8-3.8h54.1c2.1,0,3.8,1.7,3.8,3.8v0
+		C80.2,89.8,78.5,91.5,76.4,91.5z"/>
+	<path id="XMLID_49_" class="st0" d="M52.4,68.4h-6.2c-8.5,0-15.4,6.9-15.4,15.4v0h37v0C67.8,75.3,60.9,68.4,52.4,68.4z"/>
+	<line id="XMLID_48_" class="st0" x1="49.3" y1="14" x2="49.3" y2="7.8"/>
+	<line id="XMLID_47_" class="st0" x1="49.3" y1="68.4" x2="49.3" y2="22.9"/>
+	<circle id="XMLID_46_" class="st0" cx="49.3" cy="18.5" r="4.4"/>
+	<path id="XMLID_44_" class="st0" d="M32.5,30.2c0,7.8-6.3,14.1-14.1,14.1c-7.8,0-14.1-6.3-14.1-14.1H32.5z"/>
+	<g id="XMLID_41_">
+		<line id="XMLID_43_" class="st0" x1="7.3" y1="30.2" x2="18.4" y2="10"/>
+		<line id="XMLID_42_" class="st0" x1="29.5" y1="30.2" x2="18.4" y2="10"/>
+	</g>
+	<line id="XMLID_40_" class="st0" x1="44.9" y1="17.4" x2="18.4" y2="10"/>
+	<path id="XMLID_39_" class="st0" d="M66.1,52.4c0,7.8,6.3,14.1,14.1,14.1c7.8,0,14.1-6.3,14.1-14.1H66.1z"/>
+	<g id="XMLID_36_">
+		<line id="XMLID_38_" class="st0" x1="91.3" y1="52.4" x2="80.2" y2="32.1"/>
+		<line id="XMLID_37_" class="st0" x1="69.1" y1="52.4" x2="80.2" y2="32.1"/>
+	</g>
+	<line id="XMLID_35_" class="st0" x1="53.7" y1="19.5" x2="80.2" y2="32.1"/>
+</g>
+</svg>
